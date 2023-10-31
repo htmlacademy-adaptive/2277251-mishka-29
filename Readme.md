@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Georgij Tsabiev](https://up.htmlacademy.ru/adaptive/29/user/2277251).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
