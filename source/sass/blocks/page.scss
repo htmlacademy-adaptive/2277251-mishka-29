@@ -5,3 +5,15 @@
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-weight: 400;
 }
+
+.page__form {
+  padding: 17px 30px 55px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 50px 50px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 97px 50px 97px;
+  }
+}

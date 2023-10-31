@@ -24,6 +24,16 @@
       background-image: url("../img/index/hero-background-desktop@2x.jpg");
     }
   }
+
+  &--additional {
+    background-color: #f1f1f1;
+    background-image: none;
+    padding: 74px 22px;
+
+    .hero__title {
+      padding: 0;
+    }
+  }
 }
 
 .hero__title {
