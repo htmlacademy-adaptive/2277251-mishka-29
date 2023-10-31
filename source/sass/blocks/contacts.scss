@@ -1,0 +1,40 @@
+.contacts {
+  padding: 38px 0 39px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 68px 0 57px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 105px 0;
+  }
+}
+
+.contacts__title {
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+}
+
+.contacts__wrapper {
+  padding: 0 30px;
+  color: $secondary-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    font-size: 17px;
+  }
+}
+
+.contacts__mail-link {
+  color: $secondary-color;
+}
+
+.contacts__address {
+  font-style: normal;
+}

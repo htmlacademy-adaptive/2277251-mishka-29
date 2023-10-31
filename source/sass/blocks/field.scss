@@ -1,0 +1,21 @@
+.field {
+  border: none;
+  border-bottom: 2px solid $main-color;
+  padding: 16px;
+  color: $secondary-color;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 19px;
+  line-height: 18px;
+
+  &::placeholder {
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    color: $main-color;
+    opacity: 0.3;
+    font-size: 17px;
+    line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
+  }
+}

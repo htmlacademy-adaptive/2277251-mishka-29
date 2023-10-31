@@ -1,0 +1,21 @@
+.button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+
+  &--main {
+    display: block;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 17px;
+    }
+  }
+}

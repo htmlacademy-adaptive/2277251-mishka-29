@@ -1,0 +1,23 @@
+.video-presentation {
+  padding: 0 30px 58px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px 64px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px 105px 50px;
+  }
+}
+
+.video-presentation__title {
+  margin: 0;
+  color: $main-color;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}

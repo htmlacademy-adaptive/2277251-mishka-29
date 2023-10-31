@@ -1,0 +1,60 @@
+.form__description {
+  margin: 0;
+  color: $secondary-color;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.form__order-type,
+.form__product-color,
+.form__introduce,
+.form__additional {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__title {
+  padding: 0;
+  color: $additional-color;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.form__label {
+  color: $main-color;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+}
+
+.form__contacts-label {
+  padding: 0;
+  color: $additional-color;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.form__required-fields-text {
+  color: $secondary-color;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

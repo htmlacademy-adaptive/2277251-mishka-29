@@ -1,0 +1,19 @@
+.about-us {
+  padding: 31px 30px 45px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 50px 68px 50px;
+  }
+}
+
+.about-us__list {
+  color: $main-color;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

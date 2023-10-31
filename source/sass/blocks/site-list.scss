@@ -1,0 +1,10 @@
+.site-list__link {
+  color: $main-color;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+}

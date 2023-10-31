@@ -1,0 +1,10 @@
+.radio-list__text {
+  color: $main-color;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+}
