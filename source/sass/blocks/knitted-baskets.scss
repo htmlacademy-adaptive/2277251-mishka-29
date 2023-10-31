@@ -1,3 +1,15 @@
+.knitted-baskets {
+  padding: 31px 30px 36px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px 50px 52px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 50px 73px 50px;
+  }
+}
+
 .knitted-baskets__promo-text {
   color: $additional-color;
   font-size: 17px;
