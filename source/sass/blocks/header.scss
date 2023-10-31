@@ -1,6 +1,21 @@
-.header__free-delivery {
-  color: $secondary-color;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
+.header {
+  @include flex(row, normal, center);
+  position: relative;
+  flex-wrap: wrap;
+  min-height: 79px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.header__logo-link {
+  padding: 22px 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__logo-img {
+  display: block;
+  object-fit: cover;
 }

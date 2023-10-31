@@ -1,8 +1,9 @@
 .hero {
+  background-color: #f9f9f9;
   background-image: url("../img/index/hero-background.jpg");
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+  background-position: center -17px;
+  background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index/hero-background@2x.jpg");
@@ -11,6 +12,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/index/hero-background-tablet.jpg");
     background-position: center;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/hero-background-tablet@2x.jpg");
