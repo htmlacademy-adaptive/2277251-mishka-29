@@ -1,0 +1,18 @@
+.contacts__wrapper {
+  color: $secondary-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.contacts__mail-link {
+  color: $secondary-color;
+}
+
+.contacts__address {
+  font-style: normal;
+}

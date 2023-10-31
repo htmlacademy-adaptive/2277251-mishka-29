@@ -1,0 +1,32 @@
+.hero__title {
+  margin: 0;
+  color: $main-color;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.hero__link {
+  display: block;
+  background-color: $additional-color;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
