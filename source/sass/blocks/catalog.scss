@@ -1,3 +1,15 @@
+.catalog {
+  padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 79px 50px 53px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 128px 50px 57px 50px;
+  }
+}
+
 .catalog__product-link {
   color: $main-color;
   font-size: 17px;
