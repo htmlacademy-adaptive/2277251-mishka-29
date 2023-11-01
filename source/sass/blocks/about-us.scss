@@ -6,14 +6,30 @@
   }
 }
 
+.about-us__title {
+  margin: 0 0 28px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
 .about-us__list {
+  @include flex(column);
+  gap: 30px;
+  margin: 0 0 52px 0;
   color: $main-color;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 20px;
     line-height: 22px;
   }
+}
+
+.about-us__item {
+  padding: 54px 0 0 0;
 }
