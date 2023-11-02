@@ -59,10 +59,17 @@
   }
 }
 
+.hero__item {
+  background-color: $additional-color;
+
+  &:nth-child(2n) {
+    background-color: #56c3b2;
+  }
+}
+
 .hero__link {
   display: block;
   padding: 24px 30px 31px 30px;
-  background-color: $additional-color;
   color: #ffffff;
   font-size: 19px;
   font-weight: 700;
@@ -73,4 +80,8 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.hero__list:nth-child(2) {
+  background-color: #ffffff;
 }
