@@ -21,6 +21,10 @@
     left: 50px;
     transform: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 0 7px 0;
+  }
 }
 
 .header__logo-img {
