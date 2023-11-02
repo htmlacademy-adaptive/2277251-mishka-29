@@ -13,6 +13,14 @@
   padding: 22px 0;
   margin-left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    transform: none;
+  }
 }
 
 .header__logo-img {

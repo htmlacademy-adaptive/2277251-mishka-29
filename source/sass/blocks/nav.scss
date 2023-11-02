@@ -101,9 +101,11 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 0 8px;
+    background: linear-gradient(to bottom, #ffffff, #ffffff 88px, #e1e1e1 88px, #e1e1e1 89px, #f9f9f9f9, #f9f9f9 88px);
+    padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 185px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 88px 314px;
+    grid-template-rows: 88px 88px;
   }
 
   @media (min-width: $desktop-width) {
