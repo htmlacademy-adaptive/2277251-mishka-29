@@ -7,6 +7,14 @@
   &:not(:last-child) {
     border-bottom: 1px solid #ececec;
   }
+
+  &--additional {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .site-list__link {
@@ -21,6 +29,10 @@
     padding: 29px 0 27px 0;
     font-size: 15px;
   }
+}
+
+.site-list__cart {
+  width: 100%;
 }
 
 .site-list__delivery-link {
