@@ -17,5 +17,14 @@
     @media (min-width: $tablet-width) {
       font-size: 17px;
     }
+
+    &:hover {
+      background-color: $secondary-color;
+      color: #ffffff;
+    }
+
+    &:active {
+      color: #7c7c7c;
+    }
   }
 }
