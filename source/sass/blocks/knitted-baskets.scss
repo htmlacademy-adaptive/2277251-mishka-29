@@ -97,4 +97,8 @@
 
 .knitted-baskets__order-button {
   padding: 14px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 292px;
+  }
 }
