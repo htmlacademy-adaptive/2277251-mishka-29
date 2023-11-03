@@ -110,7 +110,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    grid-template-columns: 1fr 1fr 240px 1fr 1fr;
+    /* grid-template-columns: 235px 235px 280px 84px 315px; */
+    grid-template-columns: 21% 21% 24% 8% 26%;
   }
 }
 

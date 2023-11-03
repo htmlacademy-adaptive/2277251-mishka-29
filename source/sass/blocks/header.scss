@@ -23,6 +23,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
     padding: 9px 0 7px 0;
   }
 }
