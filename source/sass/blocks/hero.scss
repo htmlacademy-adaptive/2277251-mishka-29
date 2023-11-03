@@ -71,8 +71,22 @@
 .hero__item {
   background-color: $additional-color;
 
+  &:hover {
+    height: calc(100% + 5px);
+    background-color: #59d5bc;
+
+    .hero__link {
+      transform: translateY(-5px);
+      transition: 0.5s linear;
+    }
+  }
+
   &:nth-child(2n) {
     background-color: #56c3b2;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
   }
 }
 
