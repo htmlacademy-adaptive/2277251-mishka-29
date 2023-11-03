@@ -2,6 +2,7 @@
   padding: 0 30px 58px 30px;
 
   @media (min-width: $tablet-width) {
+    @include flex(column);
     padding: 0 50px 64px 50px;
   }
 
@@ -12,6 +13,9 @@
 
 .video-presentation__title {
   margin: 0;
+  padding: 22px 0 27px 91px;
+  border: 1px solid #ececec;
+  border-bottom: none;
   color: $main-color;
   font-size: 17px;
   font-weight: 700;
@@ -20,4 +24,36 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
+
+.video-presentation__link {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.video-presentation__description {
+  padding: 33px 0 33px 34px;
+  border: 1px solid #ececec;
+  border-top: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 39px 40px 36px 40px;
+  }
+}
+
+.video-presentation__text {
+  margin: 0 0 41px 0;
+  color: $secondary-color;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.video-presentation__image {
+  display: block;
+}
+
+.video-presentation__order-button {
+  max-width: 192px;
+  padding: 14px;
 }

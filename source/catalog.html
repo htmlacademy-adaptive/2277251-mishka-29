@@ -71,61 +71,83 @@
         <ul class="catalog__list reset-list">
           <li class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img src="img/catalog/catalog-bouncing-bunny.jpg" width="260" height="195" alt="Зайчик-попрыгайчик.">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/catalog-bouncing-bunny-desktop.jpg, img/catalog/catalog-bouncing-bunny-desktop@2x.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-bouncing-bunny-tablet.jpg, img/catalog/catalog-bouncing-bunny-tablet@2x.jpg 2x" width="334" height="334">
+                <img class="catalog__image" src="img/catalog/catalog-bouncing-bunny.jpg" srcset="img/catalog/catalog-bouncing-bunny@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
+              </picture>
             </a>
-            <a class="catalog__product-link" href="#">
-              Зайчик-попрыгайчик
-            </a>
-            <dl class="catalog__product-features">
-              <dt class="catalog__product-term">Рост</dt>
-              <dd class="catalog__product-definition">30 см,</dd>
-              <dt class="catalog__product-term">вес</dt>
-              <dd class="catalog__product-definition">200 г</dd>
-            </dl>
-            <span class="catalog__product-price">1 200 руб.</span>
+            <div class="catalog__product-wrapper">
+              <a class="catalog__product-link" href="#">
+                Зайчик-попрыгайчик
+              </a>
+              <dl class="catalog__product-features">
+                <dt class="catalog__product-term">Рост</dt>
+                <dd class="catalog__product-definition">30 см,</dd>
+                <dt class="catalog__product-term">вес</dt>
+                <dd class="catalog__product-definition">200 г</dd>
+              </dl>
+              <span class="catalog__product-price">1 200 руб.</span>
+            </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img src="img/catalog/catalog-laundry-basket.jpg" width="260" height="195" alt="Корзинка для белья.">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/catalog-laundry-basket-desktop.jpg, img/catalog/catalog-laundry-basket-desktop.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-laundry-basket-tablet.jpg, img/catalog/catalog-laundry-basket-tablet@2x.jpg 2x" width="334" height="334">
+                <img class="catalog__image" src="img/catalog/catalog-laundry-basket.jpg" srcset="img/catalog/catalog-laundry-basket@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья.">
+              </picture>
             </a>
-            <a class="catalog__product-link" href="#">
-              Корзинка для белья
-            </a>
-            <dl class="catalog__product-features">
-              <dt class="catalog__product-term">Диаметр</dt>
-              <dd class="catalog__product-definition">15 см,</dd>
-              <dt class="catalog__product-term">высота</dt>
-              <dd class="catalog__product-definition">10 см</dd>
-            </dl>
-            <span class="catalog__product-price">690 руб.</span>
+            <div class="catalog__product-wrapper">
+              <a class="catalog__product-link" href="#">
+                Корзинка для белья
+              </a>
+              <dl class="catalog__product-features">
+                <dt class="catalog__product-term">Диаметр</dt>
+                <dd class="catalog__product-definition">15 см,</dd>
+                <dt class="catalog__product-term">высота</dt>
+                <dd class="catalog__product-definition">10 см</dd>
+              </dl>
+              <span class="catalog__product-price">690 руб.</span>
+            </div>
           </li>
           <li class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img src="img/catalog/catalog-toys-basket.jpg" width="260" height="195" alt="Большая корзинка для игрушек.">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/catalog/catalog-toys-basket-desktop.jpg, img/catalog/catalog-toys-basket-desktop@2x.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-toys-basket-tablet.jpg, img/catalog/catalog-toys-basket-tablet@2x.jpg 2x" width="334" height="334">
+                <img class="catalog__image" src="img/catalog/catalog-toys-basket.jpg" srcset="img/catalog/catalog-toys-basket@2x.jpg 2x" width="260" height="195" alt="Большая корзинка для игрушек.">
+              </picture>
             </a>
-            <a class="catalog__product-link" href="#">
-              Большая корзинка для игрушек
-            </a>
-            <dl class="catalog__product-features">
-              <dt class="catalog__product-term">Диаметр</dt>
-              <dd class="catalog__product-definition">30 см,</dd>
-              <dt class="catalog__product-term">высота</dt>
-              <dd class="catalog__product-definition">30 см</dd>
-            </dl>
-            <span class="catalog__product-price">1 500 руб.</span>
+            <div class="catalog__product-wrapper">
+              <a class="catalog__product-link catalog__product-link--extended" href="#">
+                Большая корзинка для игрушек
+              </a>
+              <dl class="catalog__product-features">
+                <dt class="catalog__product-term">Диаметр</dt>
+                <dd class="catalog__product-definition">30 см,</dd>
+                <dt class="catalog__product-term">высота</dt>
+                <dd class="catalog__product-definition">30 см</dd>
+              </dl>
+              <span class="catalog__product-price">1 500 руб.</span>
+            </div>
           </li>
         </ul>
       </section>
       <section class="page__production-process video-presentation">
+        <h2 class="video-presentation__title">Процесс производства</h2>
         <a class="video-presentation__link" href="#">
-          <img class="video-presentation__image" src="img/catalog/catalog-videopresentation.jpg" width="260" height="150" alt="Превью видеопрезентации процесса производства товаров.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/catalog/catalog-videopresentation-desktop.jpg, img/catalog/catalog-videopresentation-desktop.jpg 2x" width="683" height="455">
+            <source media="(min-width: 768px)" srcset="img/catalog/catalog-videopresentation-tablet.jpg, img/catalog/catalog-videopresentation@2x.jpg 2x" width="668" height="455">
+            <img class="video-presentation__image" src="img/catalog/catalog-videopresentation.jpg" srcset="img/catalog/catalog-videopresentation@2x.jpg 2x" width="260" height="150" alt="Превью видеопрезентации процесса производства товаров.">
+          </picture>
         </a>
         <div class="video-presentation__description">
-          <h2 class="video-presentation__title">Процесс производства</h2>
           <p class="video-presentation__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
-          <a class="video-presentation__order-button button" href="#">
+          <a class="video-presentation__order-button button button--main" href="#">
             Сделать заказ
           </a>
         </div>
