@@ -1,3 +1,13 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 52px 1fr 1fr;
+    justify-content: space-between;
+    row-gap: 40px;
+  }
+}
+
 .slider__title {
   margin: 0 0 14px 0;
 
@@ -13,6 +23,7 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
     margin: 0;
     font-size: 17px;
   }
@@ -36,6 +47,14 @@
   }
 }
 
+.slider__control-list {
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .slider__review-author-link {
   color: $secondary-color;
   font-size: 17px;
@@ -45,4 +64,11 @@
 
 .slider__write-review {
   padding: 14px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 175px;
+    justify-self: end;
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
