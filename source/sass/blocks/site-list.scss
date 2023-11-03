@@ -90,6 +90,14 @@
     padding: 29px 0 27px 0;
     font-size: 15px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__cart {
