@@ -2,7 +2,7 @@
 
 let nav = document.querySelector('.nav');
 let navToggle = document.querySelector('.nav__toggle');
-let navListWrapper = document.querySelector('.nav__list-wrapper');
+let navList = document.querySelector('.nav__list');
 
 nav.classList.remove("nav--no-js");
 navToggle.classList.remove('nav__toggle--no-js');

@@ -114,7 +114,7 @@
   }
 }
 
-.nav--opened .nav__list-wrapper {
+.nav--opened .nav__list {
   @media (max-width: 767px) {
     position: absolute;
     width: 100%;
@@ -124,7 +124,7 @@
   }
 }
 
-.nav--closed .nav__list-wrapper {
+.nav--closed .nav__list {
   @media (max-width: 767px) {
     display: none;
   }
@@ -139,7 +139,9 @@
   }
 }
 
-.nav--no-js .nav__list-wrapper {
-  display: block;
-  position: static;
+.nav--no-js .nav__list {
+  @media (max-width: 767px) {
+    display: block;
+    position: static;
+  }
 }
