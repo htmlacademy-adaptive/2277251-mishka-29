@@ -27,6 +27,10 @@
     }
   }
 
+  @media (min-width: 1170px) {
+    background-size: contain;
+  }
+
   &--additional {
     background-color: #f1f1f1;
     background-image: none;
