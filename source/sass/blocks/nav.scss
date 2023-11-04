@@ -110,7 +110,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    /* grid-template-columns: 235px 235px 280px 84px 315px; */
     grid-template-columns: 21% 21% 24% 8% 26%;
   }
 }
@@ -119,7 +118,7 @@
   @media (min-width: $tablet-width) {
     &--extended {
       .nav__list {
-        background: linear-gradient(to bottom,#fff,#fff 88px,#e1e1e1 88px,#e1e1e1 89px,#f1f1f1,#f1f1f1 88px);
+        background: linear-gradient(to bottom, #ffffff, #ffffff 88px, #e1e1e1 88px, #e1e1e1 89px, #f1f1f1, #f1f1f1 88px);
       }
     }
   }
