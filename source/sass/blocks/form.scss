@@ -1,5 +1,5 @@
 .form__description {
-  margin: 0;
+  margin: 0 0 29px 0;
   color: $secondary-color;
   font-size: 13px;
   line-height: 24px;
@@ -20,12 +20,36 @@
 }
 
 .form__title {
+  position: relative;
+  width: 100%;
   padding: 0;
   color: $additional-color;
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 23%);
+    height: 1px;
+    top: 50%;
+    left: 23%;
+    background-color: $additional-color;
+  }
+}
+
+.form__radio-list {
+  @include flex(column);
+  gap: 11px;
+  padding: 35px 0 31px 0;
+}
+
+.form__checkbox-list {
+  @include flex(column);
+  gap: 23px;
+  padding: 25px 0 33px 0;
 }
 
 .form__label {
