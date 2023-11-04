@@ -1,1 +1,67 @@
-/* Временный коментарий  */
+.social {
+  @include flex(row, center);
+  gap: 29px;
+  padding: 0 0 28px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: transparent;
+
+  &--vkontakte {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 22px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      mask-image: url("../img/stack.svg#icon-vkontakte");
+      background-color: #231f20;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--youtube {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 22px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      mask-image: url("../img/stack.svg#icon-youtube");
+      background-color: #231f20;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--telegram {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 22px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      mask-image: url("../img/stack.svg#icon-telegram");
+      background-color: #231f20;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:hover::before {
+    background-color: #46c1ae;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
