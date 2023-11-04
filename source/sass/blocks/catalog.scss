@@ -31,6 +31,18 @@
     grid-template-columns: auto;
     grid-template-rows: max-content;
   }
+
+  &:hover {
+    .catalog__product-wrapper {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &:active {
+    .catalog__product-wrapper {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 .catalog__product-link {
@@ -47,6 +59,14 @@
 
   &--extended {
     margin: -3px 0 5px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
