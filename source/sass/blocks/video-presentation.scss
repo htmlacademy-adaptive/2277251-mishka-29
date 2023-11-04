@@ -7,6 +7,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 683px 1fr;
+    grid-template-rows: repeat(3, max-content);
     padding: 0 50px 105px 50px;
   }
 }
@@ -24,11 +27,21 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 96px 110px 0px 80px;
+    border-left: none;
+  }
 }
 
 .video-presentation__link {
   @media (min-width: $tablet-width) {
     order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    grid-row: 1 / -1;
   }
 }
 
@@ -40,6 +53,13 @@
   @media (min-width: $tablet-width) {
     padding: 39px 40px 36px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    grid-row: 2 / -1;
+    padding: 0 37px 33px 80px;
+    border-left: none;
+  }
 }
 
 .video-presentation__text {
@@ -47,13 +67,27 @@
   color: $secondary-color;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .video-presentation__image {
   display: block;
+  width: 100%;
 }
 
 .video-presentation__order-button {
   max-width: 192px;
   padding: 14px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 230px;
+  }
 }

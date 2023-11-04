@@ -13,12 +13,23 @@
 .catalog__list {
   @include flex(column);
   gap: 54px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .catalog__item {
   @media (min-width: 650px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include flex(column);
   }
 }
 
@@ -82,5 +93,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 27px 34px 26px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 32px 26px 28px;
   }
 }
