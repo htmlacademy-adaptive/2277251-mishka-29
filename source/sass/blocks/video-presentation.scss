@@ -12,6 +12,26 @@
     grid-template-rows: repeat(3, max-content);
     padding: 0 50px 105px 50px;
   }
+
+  &:hover {
+    .video-presentation__title {
+      box-shadow: 6px 0 6px -5px rgba(0, 0, 0, 0.1), 0 -6px 6px -6px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-presentation__description {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &:active {
+    .video-presentation__title {
+      box-shadow: 3px 0 5px -5px rgba(0, 0, 0, 0.1), 0 -5px 3px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-presentation__description {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 .video-presentation__title {
