@@ -18,4 +18,9 @@
       font-size: 19px;
     }
   }
+
+  &:focus-within {
+    outline: none;
+    border-color: $additional-color;
+  }
 }
