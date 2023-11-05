@@ -115,6 +115,36 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  &--interior {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 62px;
+      top: 23px;
+      right: 36px;
+      background-image: url(../img/stack.svg#icon-interior);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--toys {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 21px;
+      right: 27px;
+      background-image: url(../img/stack.svg#icon-toy);
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .hero__list:nth-child(2) {
