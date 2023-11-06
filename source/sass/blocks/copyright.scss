@@ -11,6 +11,11 @@
   font-weight: 700;
   line-height: 18px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    justify-self: end;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -18,7 +23,7 @@
     right: 0;
     width: 27px;
     height: 35px;
-    mask-image: url(../img/stack.svg#icon-html-academy);
+    mask-image: url("../img/stack.svg#icon-html-academy");
     background-color: $additional-color;
   }
 
