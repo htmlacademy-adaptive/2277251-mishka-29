@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 225px 0 97px;
+    padding: 0 225px 0 225px;
   }
 }
 
@@ -69,6 +69,10 @@
     background-color: #f1f1f1;
     padding: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 225px 50px 97px;
+  }
 }
 
 .form__radio-list {
@@ -97,6 +101,10 @@
   @media (min-width: $tablet-width) {
     padding: 67px 50px 50px 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 67px 225px 50px 97px;
+  }
 }
 
 .form__introduce-list {
@@ -117,6 +125,10 @@
     background-color: #f1f1f1;
     padding: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 225px 50px 97px;
+  }
 }
 
 .form__contacts-list {
@@ -130,9 +142,11 @@
 }
 
 .form__contacts-item {
-  display: grid;
-  grid-template-columns: 65px 1fr;
-  gap: 97px;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 97px;
+  }
 }
 
 .form__label {
@@ -162,6 +176,11 @@
     grid-template-rows: min-content min-content;
     padding: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 65px 1fr 1fr;
+    padding: 50px 225px 50px 97px;
+  }
 }
 
 .form__required-fields-text {
@@ -181,6 +200,10 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3;
+  }
 }
 
 .form__submit-button {
@@ -191,6 +214,10 @@
     grid-column: 1 / -1;
     grid-row: 2;
     max-width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
   }
 }
 
