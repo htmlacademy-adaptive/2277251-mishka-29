@@ -4,4 +4,8 @@
   display: block;
   border: 2px solid $secondary-color;
   padding: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
