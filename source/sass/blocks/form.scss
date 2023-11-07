@@ -1,5 +1,6 @@
 .form__description {
-  margin: 0 0 29px 0;
+  margin: 0 auto 29px auto;
+  max-width: 1150px;
   color: $secondary-color;
   font-size: 13px;
   line-height: 24px;
@@ -11,7 +12,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 225px 0 225px;
+    max-width: 828px;
+    padding: 0 97px 0 97px;
+    margin: 0 auto 63px auto;
   }
 }
 
@@ -59,8 +62,22 @@
 }
 
 .form__order-type {
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto 50px auto;
+  }
+}
+
+.form__product-color-wrapper {
   @media (min-width: $tablet-width) {
-    margin: 0 0 50px 0;
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 828px;
+    margin: 0 auto;
   }
 }
 
@@ -138,6 +155,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 828px;
+    margin: 0 auto;
   }
 }
 
