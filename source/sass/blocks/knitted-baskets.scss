@@ -2,6 +2,10 @@
   padding: 31px 30px 43px 30px;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content);
+    gap: 0 42px;
     padding: 52px 50px 52px 50px;
   }
 
@@ -28,6 +32,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 100px;
+    text-align: center;
     margin: 0;
     line-height: 17px;
   }
@@ -40,6 +46,8 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row: 2;
     margin: 0;
     font-size: 17px;
     line-height: 30px;
@@ -56,6 +64,9 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    align-self: start;
+    grid-column: 1;
+    grid-row: 3;
     margin: 0;
   }
 }
@@ -70,7 +81,15 @@
   border-bottom: 1px solid #ececec;
 }
 
+.knitted-baskets__image-wrapper {
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    grid-row: 2 / -1;
+  }
+}
+
 .knitted-baskets__image {
+  display: block;
   width: 100%;
   margin: 0 0 22px 0;
 
@@ -78,6 +97,10 @@
     margin: 0;
     width: initial;
   }
+}
+
+.knitted-baskets__order-wrapper {
+  @include flex(column, space-between);
 }
 
 .knitted-baskets__price {
