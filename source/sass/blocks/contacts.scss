@@ -1,9 +1,15 @@
 .contacts {
+  background-image: url("../img/stack.svg#divider");
+  background-repeat: repeat no-repeat;
+  background-position: top;
+  background-size: 320px 6px;
   padding: 38px 0 39px 0;
 
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 68px 0 57px 0;
+    background-image: url("../img/stack.svg#divider-tablet");
+    background-size: 772px 17px;
 
     &::before {
       content: "";
@@ -27,6 +33,9 @@
     grid-template-columns: 1fr 527px;
     grid-template-rows: repeat(3, min-content);
     padding: 71px 50px 105px 113px;
+    background-image: url("../img/stack.svg#divider-desktop");
+    background-size: 1050px 23px;
+    background-repeat: no-repeat;
   }
 }
 

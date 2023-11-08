@@ -1,5 +1,10 @@
 .knitted-baskets {
   padding: 31px 30px 43px 30px;
+  background-image: url("../img/stack.svg#divider");
+  background-repeat: repeat no-repeat;
+  background-position: bottom;
+  background-size: 320px 6px;
+
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -7,10 +12,15 @@
     grid-template-rows: repeat(4, min-content);
     gap: 0 42px;
     padding: 52px 50px 52px 50px;
+    background-image: url("../img/stack.svg#divider-tablet");
+    background-size: 772px 17px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 71px 50px 73px 50px;
+    background-image: url("../img/stack.svg#divider-desktop");
+    background-size: 1050px 23px;
+    background-repeat: no-repeat;
   }
 }
 
