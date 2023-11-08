@@ -75,11 +75,29 @@
 }
 
 .contacts__mail-link {
-  margin: 0 10px 0 0;
+  margin: 0;
   color: $secondary-color;
+  text-decoration: underline;
+  text-decoration-color: $additional-color;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    text-underline-offset: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-underline-offset: 12px;
+  }
+
+  &:hover {
+    color: #46c1ae;
+    text-decoration-color: #46c1ae;
+  }
+
+  &:active {
+    text-decoration-color: rgba(70, 193, 174, 0.1);
   }
 }
 
