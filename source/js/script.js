@@ -21,18 +21,15 @@ navToggle.addEventListener('click', function () {
 
 const modal = document.querySelector('.modal');
 const btn = document.querySelector('.knitted-baskets__order-button');
-const closeBtn = Array.from(document.querySelectorAll('.modal__add-button'));
+const closeBtn = document.querySelector('.modal__add-button');
 
 btn.addEventListener('click', (evt) => {
   evt.preventDefault();
   modal.style.display = "flex";
 });
 
-closeBtn.forEach(closeBtn => {
-  closeBtn.addEventListener('click', (event) => {
-    evt.preventDefault();
-    modal.style.display = "none";
-  });
+closeBtn.addEventListener('click', (event) => {
+  modal.style.display = "none";
 });
 
 window.addEventListener('click', (event) => {
