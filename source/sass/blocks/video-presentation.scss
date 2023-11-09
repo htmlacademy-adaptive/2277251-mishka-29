@@ -98,18 +98,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: url("../img/stack.svg#icon-play");
-    transition: .3s linear;
+    transition: 0.3s linear;
   }
 
   &:hover::before {
     transform: translate(-50%, -50%) scale(1.2);
-    transition: .3s linear;
+    transition: 0.3s linear;
   }
 
   &:active::before {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.3;
-    transition: .3s linear;
+    transition: 0.3s linear;
   }
 }
 
