@@ -90,7 +90,10 @@
               <dt class="catalog__product-term">вес</dt>
               <dd class="catalog__product-definition">200 г</dd>
             </dl>
-            <span class="catalog__product-price">1 200 руб.</span>
+            <div class="catalog__price-wrapper">
+              <span class="catalog__product-price">1 200 руб.</span>
+              <button class="page__order-button button catalog__add-to-cart" type="button" aria-label="Добавить в корзину."></button>
+            </div>
           </div>
         </li>
         <li class="catalog__item">
@@ -111,7 +114,10 @@
               <dt class="catalog__product-term">высота</dt>
               <dd class="catalog__product-definition">10 см</dd>
             </dl>
-            <span class="catalog__product-price">690 руб.</span>
+            <div class="catalog__price-wrapper">
+              <span class="catalog__product-price">690 руб.</span>
+              <button class="page__order-button button catalog__add-to-cart" type="button" aria-label="Добавить в корзину."></button>
+            </div>
           </div>
         </li>
         <li class="catalog__item">
@@ -132,7 +138,10 @@
               <dt class="catalog__product-term">высота</dt>
               <dd class="catalog__product-definition">30 см</dd>
             </dl>
-            <span class="catalog__product-price">1 500 руб.</span>
+            <div class="catalog__price-wrapper">
+              <span class="catalog__product-price">1 500 руб.</span>
+              <button class="page__order-button button catalog__add-to-cart" type="button" aria-label="Добавить в корзину."></button>
+            </div>
           </div>
         </li>
       </ul>
@@ -177,6 +186,34 @@
       Разработано
     </a>
   </footer>
+  <div class="modal">
+    <div class="modal__control modal__add-to-cart">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">
+        Выберите размер:
+      </p>
+      <ul class="modal__list reset-list">
+        <li class="modal__item">
+          <button class="button modal__size-button modal__size-button--active" type="button">
+            S
+          </button>
+        </li>
+        <li class="modal__item">
+          <button class="button modal__size-button" type="button">
+            M
+          </button>
+        </li>
+        <li class="modal__item">
+          <button class="button modal__size-button" type="button">
+            L
+          </button>
+        </li>
+      </ul>
+      <button class="button modal__add-button button--additional" type="button">
+        Добавить
+      </button>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html>

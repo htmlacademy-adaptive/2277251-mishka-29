@@ -90,15 +90,12 @@
 
 .catalog__product-price {
   display: block;
-  padding: 23px 0 0 0;
   color: $main-color;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
-  border-top: 1px solid #ececec;
 
   @media (min-width: $tablet-width) {
-    margin-top: auto;
     font-size: 17px;
   }
 }
@@ -120,4 +117,22 @@
   @media (min-width: $desktop-width) {
     padding: 27px 32px 26px 28px;
   }
+}
+
+.catalog__price-wrapper {
+  @include flex(row, space-between, center);
+  padding: 23px 0 0 0;
+  border-top: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
+}
+
+.catalog__add-to-cart {
+  display: block;
+  width: 20px;
+  height: 19px;
+  background-image: url("../img/stack.svg#icon-cart");
+  background-repeat: no-repeat;
 }

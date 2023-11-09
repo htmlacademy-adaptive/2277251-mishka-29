@@ -42,3 +42,10 @@
     grid-row: 1 / -1;
   }
 }
+
+.page__order-button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+}
