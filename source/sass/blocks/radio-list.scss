@@ -1,5 +1,5 @@
 .radio-list__text {
-  padding: 0 0 0 61px;
+  padding: 5px 0 1px 61px;
   color: $main-color;
   font-size: 17px;
   font-weight: 700;
@@ -8,8 +8,31 @@
   @media (min-width: $tablet-width) {
     font-size: 19px;
   }
+
+  &--size {
+    padding: 12px 0 12px 61px;
+  }
 }
 
 .radio-list__control {
   @include flex();
+  position: relative;
+}
+
+.radio-list__field + .radio-list__control-outline {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+}
+
+.radio-list__field:checked + .radio-list__control-outline::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: $additional-color;
 }
