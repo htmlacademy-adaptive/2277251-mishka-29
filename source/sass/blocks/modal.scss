@@ -1,5 +1,5 @@
 .modal {
-  /* display: none; */
+  display: none;
   z-index: 1;
   position: fixed;
   top: 0;
@@ -76,16 +76,40 @@
   line-height: 16px;
   text-transform: uppercase;
 
-  &--active {
+  @media (min-width: $tablet-width) {
+    padding: 18px 53px;
+  }
+
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
     border-color: $additional-color;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 18px 53px;
+  &--active {
+    border-color: $additional-color;
+
+    &:hover {
+      border-color: #59d5bc;
+    }
+
+    &:active {
+      border-color: $additional-color;
+    }
   }
 }
 
 .modal__add-button {
   width: 100%;
   padding: 16px;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
