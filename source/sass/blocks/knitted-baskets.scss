@@ -96,6 +96,10 @@
     grid-column: 2;
     grid-row: 2 / -1;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / -1;
+  }
 }
 
 .knitted-baskets__image {
