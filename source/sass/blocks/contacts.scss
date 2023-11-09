@@ -151,18 +151,18 @@
 
 .contacts__map-image-wrapper {
   grid-row: 1 / -1;
+  display: none;
+
+  &--no-js {
+    display: block;
+  }
 }
 
 .contacts__map-image {
-  display: none;
   width: 100%;
   margin: 0 0 35px 0;
 
   @media (min-width: $desktop-width) {
     margin: 0;
-  }
-
-  &--no-js {
-    display: block;
   }
 }
