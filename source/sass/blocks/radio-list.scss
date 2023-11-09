@@ -5,24 +5,39 @@
   font-weight: 700;
   line-height: 18px;
 
+  @media (min-width: 347px) {
+    padding: 13px 0 13px 61px;
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 17px 0 17px 78px;
     font-size: 19px;
   }
 
   &--size {
     padding: 12px 0 12px 61px;
+
+    @media (min-width: $tablet-width) {
+      padding: 17px 0 17px 78px;
+    }
   }
 }
 
 .radio-list__control {
   @include flex();
   position: relative;
+  cursor: pointer;
 }
 
 .radio-list__field + .radio-list__control-outline {
   border-radius: 50%;
   width: 42px;
   height: 42px;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .radio-list__field:checked + .radio-list__control-outline::after {
@@ -35,4 +50,27 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: $additional-color;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.radio-list__field:hover + .radio-list__control-outline {
+  border-color: $additional-color;
+}
+
+.radio-list__field:active + .radio-list__control-outline {
+  border-color: #b3b3b3;
+}
+
+.radio-list__field:focus-visible + .radio-list__control-outline {
+  outline: 2px solid $additional-color;
+  outline-offset: 4px;
+}
+
+.radio-list__field:disabled ~ .radio-list__text,
+.radio-list__field:disabled ~ .radio-list__control-outline {
+  opacity: 0.2;
 }

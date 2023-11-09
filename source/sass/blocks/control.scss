@@ -6,4 +6,9 @@
   height: 38px;
   background-color: transparent;
   border: 2px solid $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
 }

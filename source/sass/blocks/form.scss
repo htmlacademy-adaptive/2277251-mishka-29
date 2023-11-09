@@ -6,6 +6,7 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto 63px auto;
     font-size: 17px;
     line-height: 30px;
     padding: 0 50px 0 50px;
@@ -62,9 +63,12 @@
 }
 
 .form__order-type {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 50px auto;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 1150px;
-    margin: 0 auto 50px auto;
   }
 }
 
@@ -98,6 +102,8 @@
   padding: 35px 0 31px 0;
 
   @media (min-width: $tablet-width) {
+    max-width: 400px;
+    gap: 24px;
     padding: 0;
   }
 }
@@ -111,6 +117,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0;
+    gap: 24px;
   }
 }
 
