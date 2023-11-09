@@ -201,6 +201,35 @@
       Разработано
     </a>
   </footer>
+  <!-- Модальное окно открывается при нажатии на кнопку "Заказать" -->
+  <div class="modal">
+    <div class="modal__control modal__add-to-cart">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">
+        Выберите размер:
+      </p>
+      <ul class="modal__list reset-list">
+        <li class="modal__item">
+          <button class="button modal__size-button modal__size-button--active" type="button">
+            S
+          </button>
+        </li>
+        <li class="modal__item">
+          <button class="button modal__size-button" type="button">
+            M
+          </button>
+        </li>
+        <li class="modal__item">
+          <button class="button modal__size-button" type="button">
+            L
+          </button>
+        </li>
+      </ul>
+      <button class="button modal__add-button button--additional" type="button">
+        Добавить
+      </button>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>

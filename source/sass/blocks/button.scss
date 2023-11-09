@@ -27,4 +27,15 @@
       color: #7c7c7c;
     }
   }
+
+  &--additional {
+    display: block;
+    background-color: $additional-color;
+    color: #ffffff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
 }
