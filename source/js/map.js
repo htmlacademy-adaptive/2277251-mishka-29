@@ -3,13 +3,17 @@
 let screenWidth = window.screen.width;
 let mapWrapper = document.querySelector('.page__map');
 let mapImage = document.querySelector('.contacts__map-image-wrapper');
-let center = [34.866849964021355,-111.76106949186402];
-let pinSize = [27, 27];
-let pinOffset = [-10, -20];
-let zoom = 7;
+let center = [59.93877198926694,30.3230594070307];
+let pinSize = [67, 100];
+let pinOffset = [-30, -90];
+let zoom = 17;
 
 mapWrapper.classList.remove('map--no-js');
 mapImage.classList.remove('contacts__map-image-wrapper--no-js');
+
+if (screenWidth >= 1150) {
+  zoom = 16;
+}
 
 function init() {
   let map = new ymaps.Map('map', {
