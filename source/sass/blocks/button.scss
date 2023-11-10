@@ -38,4 +38,9 @@
     line-height: 16px;
     text-transform: uppercase;
   }
+
+  &:focus-visible {
+    outline: 3px solid $main-color;
+    outline-offset: 4px;
+  }
 }
