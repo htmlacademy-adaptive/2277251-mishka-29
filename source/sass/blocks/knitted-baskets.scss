@@ -144,6 +144,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+    min-width: 292px;
+    align-self: center;
   }
 
   &:hover {
@@ -155,8 +157,8 @@
     color: #7c7c7c;
   }
 
-  @media (min-width: $tablet-width) {
-    min-width: 292px;
-    align-self: center;
+  &::focus-visible {
+    outline: 3px solid $main-color;
+    outline-offset: 4px;
   }
 }
