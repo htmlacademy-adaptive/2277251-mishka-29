@@ -1,10 +1,69 @@
 .checkbox-list__text {
+  display: block;
+  padding: 10px 0 10px 61px;
   color: $main-color;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    padding: 17px 0 17px 78px;
     font-size: 19px;
   }
+}
+
+.checkbox-list__control {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-list__field:checked + .checkbox-list__control-outline::before,
+.checkbox-list__field:checked + .checkbox-list__control-outline::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 1px;
+  top: 20px;
+  left: 5px;
+  background-color: $main-color;
+  transform: rotate(45deg);
+  border-radius: 2px;
+
+  @media (min-width: $tablet-width) {
+    height: 2px;
+    width: 15px;
+    top: 30px;
+    left: 9px;
+  }
+}
+
+.checkbox-list__field:checked + .checkbox-list__control-outline::after {
+  width: 21px;
+  top: 17px;
+  left: 11px;
+  transform: rotate(-45deg);
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    top: 26px;
+    left: 17px;
+  }
+}
+
+.checkbox-list__field:hover + .checkbox-list__control-outline {
+  border-color: $additional-color;
+}
+
+.checkbox-list__field:active + .checkbox-list__control-outline {
+  border-color: #b3b3b3;
+}
+
+.checkbox-list__field:focus-visible + .checkbox-list__control-outline {
+  outline: 2px solid $main-color;
+  outline-offset: 4px;
+}
+
+.checkbox-list__field:disabled ~ .checkbox-list__text,
+.checkbox-list__field:disabled ~ .checkbox-list__control-outline {
+  opacity: 0.2;
 }

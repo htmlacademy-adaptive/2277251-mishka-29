@@ -10,7 +10,44 @@
   }
 }
 
+.catalog__list {
+  @include flex(column);
+  gap: 54px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.catalog__item {
+  @media (min-width: 650px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content;
+  }
+
+  &:hover {
+    .catalog__product-wrapper {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &:active {
+    .catalog__product-wrapper {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
 .catalog__product-link {
+  display: block;
+  margin: 0 0 5px 0;
   color: $main-color;
   font-size: 17px;
   font-weight: 700;
@@ -19,9 +56,25 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  &--extended {
+    margin: -3px 0 5px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__product-features {
+  @include flex();
+  gap: 3px;
+  margin: 0;
+  padding: 0 0 17px 0;
   color: $secondary-color;
   font-size: 13px;
   line-height: 30px;
@@ -31,7 +84,12 @@
   }
 }
 
+.catalog__product-definition {
+  margin: 0;
+}
+
 .catalog__product-price {
+  display: block;
   color: $main-color;
   font-size: 15px;
   font-weight: 700;
@@ -40,4 +98,41 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
   }
+}
+
+.catalog__image {
+  display: block;
+  width: 100%;
+}
+
+.catalog__product-wrapper {
+  padding: 27px;
+  border: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    @include flex(column);
+    padding: 27px 34px 26px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 32px 26px 28px;
+  }
+}
+
+.catalog__price-wrapper {
+  @include flex(row, space-between, center);
+  padding: 23px 0 0 0;
+  border-top: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
+}
+
+.catalog__add-to-cart {
+  display: block;
+  width: 20px;
+  height: 19px;
+  background-image: url("../img/stack.svg#icon-cart");
+  background-repeat: no-repeat;
 }

@@ -1,6 +1,37 @@
 .copyright {
+  @include flex(row, normal, center);
+  position: relative;
+  margin: 22px auto 0 auto;
+  display: block;
+  max-width: 182px;
+  min-height: 35px;
+  padding: 0 55px 0 0;
   color: $main-color;
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    justify-self: end;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 27px;
+    height: 35px;
+    mask-image: url("../img/stack.svg#icon-html-academy");
+    background-color: $additional-color;
+  }
+
+  &:hover::after {
+    background-color: #46c1ae;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }

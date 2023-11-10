@@ -1,16 +1,40 @@
 .knitted-baskets {
-  padding: 31px 30px 36px 30px;
+  padding: 31px 30px 43px 30px;
+  background-image: url("../img/stack.svg#divider");
+  background-repeat: repeat no-repeat;
+  background-position: bottom;
+  background-size: 320px 6px;
+
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content);
+    gap: 0 42px;
     padding: 52px 50px 52px 50px;
+    background-image: url("../img/stack.svg#divider-tablet");
+    background-size: 772px 17px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 71px 50px 73px 50px;
+    background-image: url("../img/stack.svg#divider-desktop");
+    background-size: 1050px 23px;
+    background-repeat: no-repeat;
+  }
+}
+
+.knitted-baskets__title {
+  margin: 0 0 4px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
 .knitted-baskets__promo-text {
+  display: block;
+  margin: 0 0 18px 0;
   color: $additional-color;
   font-size: 17px;
   font-weight: 700;
@@ -18,34 +42,82 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 100px;
+    text-align: center;
+    margin: 0;
     line-height: 17px;
   }
 }
 
 .knitted-baskets__description {
-  margin: 0;
+  margin: 0 0 28px 0;
   color: $secondary-color;
   font-size: 15px;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
     font-size: 17px;
     line-height: 30px;
   }
 }
 
 .knitted-baskets__features {
-  margin: 0;
+  margin: 0 0 28px 0;
+  display: grid;
+  grid-template-columns: 38% 1fr;
+  gap: 7px 0;
   color: $secondary-color;
   font-size: 15px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    grid-column: 1;
+    grid-row: 3;
+    margin: 0;
+  }
+}
+
+.knitted-baskets__term {
+  padding: 0 0 12px 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .knitted-baskets__definition {
   margin: 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.knitted-baskets__image-wrapper {
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    grid-row: 2 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / -1;
+  }
+}
+
+.knitted-baskets__image {
+  display: block;
+  width: 100%;
+  margin: 0 0 22px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.knitted-baskets__order-wrapper {
+  @include flex(column, space-between);
 }
 
 .knitted-baskets__price {
+  margin: 0 0 22px 0;
   display: block;
   color: $secondary-color;
   text-align: center;
@@ -54,6 +126,39 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 20px;
+  }
+}
+
+.knitted-baskets__order-button {
+  display: block;
+  padding: 14px;
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    min-width: 292px;
+    align-self: center;
+  }
+
+  &:hover {
+    background-color: $secondary-color;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $main-color;
+    outline-offset: 4px;
   }
 }

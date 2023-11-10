@@ -1,1 +1,36 @@
-/* Временный коментарий  */
+.footer {
+  @include flex(column);
+  padding: 25px 30px 23px 30px;
+  background-color: #f1f1f1;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 51px 50px 58px 50px;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  fill: $main-color;
+}
+
+.footer__logo-link {
+  display: none;
+  max-width: 105px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  &:hover {
+    .footer__logo {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
