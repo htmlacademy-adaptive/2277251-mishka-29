@@ -32,7 +32,7 @@
     display: grid;
     grid-template-columns: 1fr 527px;
     grid-template-rows: repeat(3, min-content);
-    padding: 71px 50px 105px 113px;
+    padding: 71px 50px 105px 175px;
     background-image: url("../img/stack.svg#divider-desktop");
     background-size: 1050px 23px;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 49px 0;
-    padding: 79px 0 0 111px;
+    padding: 79px 0 0 0;
   }
 }
 
@@ -79,7 +79,7 @@
     grid-column: 1;
     grid-row: 2;
     gap: 30px 24px;
-    padding: 0 0 0 111px;
+    padding: 0;
   }
 }
 
