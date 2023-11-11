@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 50px 73px 50px;
+    padding: 71px 0 73px 174px;
     background-image: url("../img/stack.svg#divider-desktop");
     background-size: 1050px 23px;
     background-repeat: no-repeat;
@@ -25,10 +25,54 @@
 }
 
 .knitted-baskets__title {
-  margin: 0 0 4px 0;
+  position: relative;
+  margin: 0 0 18px 0;
+  padding: 0 0 24px 0;
+
+  &::before {
+    content: "Товар Недели";
+    position: absolute;
+    width: 163px;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    color: $additional-color;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      width: 100px;
+      height: 34px;
+      padding: 7px 0 10px 0;
+      text-align: center;
+      top: 0;
+      right: 0;
+      left: auto;
+      bottom: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 34px;
+      padding: 7px 0 10px 0;
+      text-align: center;
+      top: 40%;
+      right: auto;
+      left: -143px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin: 0 0 50px 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 61px 0 0 0;
   }
 }
 
@@ -98,6 +142,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
     grid-row: 1 / -1;
   }
 }
@@ -109,6 +154,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    max-width: none;
   }
 }
 
