@@ -76,7 +76,9 @@
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <section class="form__fieldset form__order-type container">
-          <h2 class="form__title">Тип</h2>
+          <div class="form__title-wrapper">
+            <h2 class="form__title">Тип</h2>
+          </div>
           <ul class="form__radio-list radio-list reset-list">
             <li class="radio-list__item">
               <label class="radio-list__control control">
@@ -96,7 +98,9 @@
         </section>
         <section class="form__product-color">
           <div class="form__product-color-wrapper">
-            <h2 class="form__title">Цвет</h2>
+            <div class="form__title-wrapper">
+              <h2 class="form__title">Цвет</h2>
+            </div>
             <ul class="form__checkbox-list checkbox-list reset-list">
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
@@ -144,7 +148,9 @@
           </div>
         </section>
         <section class="form__fieldset form__introduce container">
-          <h2 class="form__title">Фио</h2>
+          <div class="form__title-wrapper">
+            <h2 class="form__title">Фио</h2>
+          </div>
           <ul class="form__introduce-list reset-list">
             <li class="form__introduce-item">
               <label class="form__label" for="user-name">Имя:</label>
@@ -165,18 +171,24 @@
             <h2 class="visually-hidden">Контактные данные</h2>
             <ul class="form__contacts-list reset-list">
               <li class="form__contacts-item">
-                <label class="form__contacts-label form__title" for="user-number">Тел</label>
+                <div class="form__title-wrapper">
+                  <label class="form__contacts-label form__title" for="user-number">Тел</label>
+                </div>
                 <input class="form__field field field--phone" type="tel" name="user-number" id="user-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Ваш номер телефона." required>
               </li>
               <li class="form__contacts-item">
-                <label class="form__contacts-label form__title" for="user-email">E-mail</label>
+                <div class="form__title-wrapper">
+                  <label class="form__contacts-label form__title" for="user-email">E-mail</label>
+                </div>
                 <input class="form__field field field--email" type="email" name="user-email" id="user-email" placeholder="Ваш Email*" aria-label="Ваш email." required>
               </li>
             </ul>
           </div>
         </section>
         <section class="form__fieldset form__additional container">
-          <h2 class="form__title">Доп</h2>
+          <div class="form__title-wrapper">
+            <h2 class="form__title">Доп</h2>
+          </div>
           <textarea class="user-emotions-field field" name="user-wishes" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           <span class="form__required-fields-text">*Поля обязательны для заполнения</span>
           <button class="form__submit-button button button--main" type="submit">

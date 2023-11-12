@@ -19,9 +19,25 @@
   }
 }
 
-.form__title {
+.form__title-wrapper {
+  @include flex();
   position: relative;
-  width: 100%;
+  gap: 28px;
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 8px;
+    border-bottom: 1px solid #63d1bb;
+    flex-grow: 1;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+}
+
+.form__title {
   margin: 0;
   padding: 0;
   color: $additional-color;
@@ -29,24 +45,6 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: calc(100% - 23%);
-    height: 1px;
-    top: 50%;
-    left: 23%;
-    background-color: $additional-color;
-
-    @media (min-width: $tablet-width) {
-      content: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: initial;
-  }
 }
 
 .form__fieldset {
@@ -190,7 +188,7 @@
 }
 
 .form__contacts-label {
-  display: flex;
+  @include flex();
   padding: 0;
   color: $additional-color;
   font-size: 17px;

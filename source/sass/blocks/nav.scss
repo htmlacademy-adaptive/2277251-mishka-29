@@ -4,9 +4,8 @@
 }
 
 .nav__toggle {
+  @include flex(row, normal, center);
   position: relative;
-  display: flex;
-  align-items: center;
   z-index: 1;
   width: 20px;
   height: 14px;
