@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 128px 50px 57px 50px;
+    padding: 128px 0 57px 0;
   }
 }
 
@@ -17,6 +17,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 51px;
   }
 }
 
@@ -133,6 +134,17 @@
   display: block;
   width: 20px;
   height: 19px;
-  background-image: url("../img/stack.svg#icon-cart");
+  background-color: $main-color;
+  opacity: 0.2;
+  mask-image: url("../img/stack.svg#icon-cart");
   background-repeat: no-repeat;
+
+  &:hover {
+    background-color: $additional-color;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 683px 1fr;
     grid-template-rows: repeat(3, max-content);
-    padding: 0 50px 105px 50px;
+    padding: 0 0 105px 0;
   }
 
   &:hover {
