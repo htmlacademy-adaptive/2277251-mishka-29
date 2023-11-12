@@ -107,7 +107,10 @@
     transform: translateY(-5px);
     transition: 0.5s linear;
     background-color: #59d5bc;
-    border-radius: 10px;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 10px;
+    }
 
     .hero__link {
       transform: translateY(-5px);
