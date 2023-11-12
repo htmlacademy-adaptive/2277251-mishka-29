@@ -4,6 +4,7 @@
   display: block;
   border: 2px solid $secondary-color;
   padding: 17px;
+  color: $main-color;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
