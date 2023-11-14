@@ -19,6 +19,7 @@
 .footer__logo-link {
   display: none;
   max-width: 105px;
+  transition: 0.3s linear;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -27,10 +28,12 @@
   &:hover {
     .footer__logo {
       fill: #46c1ae;
+      transition: 0.3s linear;
     }
   }
 
   &:active {
     opacity: 0.3;
+    transition: 0.3s linear;
   }
 }

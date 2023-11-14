@@ -29,6 +29,7 @@
       mask-image: url("../img/stack.svg#icon-vkontakte");
       background-color: #231f20;
       background-repeat: no-repeat;
+      transition: 0.3s ease-in;
     }
   }
 
@@ -44,6 +45,7 @@
       mask-image: url("../img/stack.svg#icon-youtube");
       background-color: #231f20;
       background-repeat: no-repeat;
+      transition: 0.3s ease-in;
     }
   }
 
@@ -59,14 +61,17 @@
       mask-image: url("../img/stack.svg#icon-telegram");
       background-color: #231f20;
       background-repeat: no-repeat;
+      transition: 0.3s ease-in;
     }
   }
 
   &:hover::before {
     background-color: #46c1ae;
+    transition: 0.3s ease-in;
   }
 
   &:active::before {
     opacity: 0.3;
+    transition: 0.3s ease-in;
   }
 }

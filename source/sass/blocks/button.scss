@@ -13,6 +13,7 @@
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
+    transition: 0.4s ease-in;
 
     @media (min-width: $tablet-width) {
       font-size: 17px;
@@ -21,10 +22,12 @@
     &:hover {
       background-color: $secondary-color;
       color: #ffffff;
+      transition: 0.4s ease-in;
     }
 
     &:active {
       color: #7c7c7c;
+      transition: 0.4s ease-in;
     }
   }
 

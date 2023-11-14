@@ -7,6 +7,7 @@
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 19px;
   line-height: 18px;
+  transition: 0.3s ease-in-out;
 
   &::placeholder {
     font-family: "Open Sans", "Tahoma", sans-serif;
@@ -22,10 +23,12 @@
 
   &:hover {
     border-color: $additional-color;
+    transition: 0.3s ease-in-out;
   }
 
   &:focus-within {
     outline: none;
     border-color: $additional-color;
+    transition: 0.3s ease-in;
   }
 }
