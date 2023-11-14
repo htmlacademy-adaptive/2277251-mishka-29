@@ -20,6 +20,10 @@
     }
   }
 
+  &:hover {
+    border-color: $additional-color;
+  }
+
   &:focus-within {
     outline: none;
     border-color: $additional-color;
