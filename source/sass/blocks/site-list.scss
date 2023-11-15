@@ -7,6 +7,8 @@
 }
 
 .site-list__item {
+  max-height: 88px;
+
   &:not(:last-child) {
     border-bottom: 1px solid #ececec;
 
@@ -80,6 +82,7 @@
 .site-list__link {
   position: relative;
   display: block;
+  height: 100%;
   text-align: start;
   padding: 29px 55px 27px 76px;
   color: $main-color;
