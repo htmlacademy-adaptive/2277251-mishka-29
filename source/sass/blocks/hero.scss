@@ -137,7 +137,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 36px 34px 36px;
+    padding: 25px 36px 46px 36px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -150,7 +150,7 @@
       position: absolute;
       width: 40px;
       height: 62px;
-      top: 23px;
+      top: 30px;
       right: 36px;
       background-image: url("../img/stack.svg#icon-interior");
       background-repeat: no-repeat;
@@ -165,8 +165,8 @@
       position: absolute;
       width: 60px;
       height: 60px;
-      top: 21px;
-      right: 27px;
+      top: 32px;
+      right: 34px;
       background-image: url("../img/stack.svg#icon-toy");
       background-repeat: no-repeat;
     }

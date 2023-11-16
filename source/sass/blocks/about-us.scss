@@ -2,7 +2,7 @@
   padding: 31px 30px 58px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 50px 68px 50px;
+    padding: 56px 50px 80px 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,7 +14,7 @@
   margin: 0 0 28px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 44px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +34,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 56px 0;
     font-size: 20px;
     line-height: 22px;
   }
@@ -41,7 +42,7 @@
 
 .about-us__item {
   position: relative;
-  padding: 54px 0 0 0;
+  padding: 54px 25px 0 0;
 
   &::before {
     content: "";
