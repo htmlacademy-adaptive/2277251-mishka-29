@@ -132,9 +132,12 @@
 }
 
 .knitted-baskets__image-wrapper {
+  margin: 0 0 26px 0;
+
   @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 2 / -1;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -146,11 +149,6 @@
 .knitted-baskets__image {
   display: block;
   width: 100%;
-  margin: 0 0 22px 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
 
   @media (min-width: $desktop-width) {
     width: auto;

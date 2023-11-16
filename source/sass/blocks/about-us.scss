@@ -1,5 +1,5 @@
 .about-us {
-  padding: 31px 30px 45px 30px;
+  padding: 31px 30px 58px 30px;
 
   @media (min-width: $tablet-width) {
     padding: 56px 50px 68px 50px;
@@ -24,8 +24,8 @@
 
 .about-us__list {
   @include flex(column);
-  gap: 30px;
-  margin: 0 0 52px 0;
+  gap: 29px;
+  margin: 0;
   color: $main-color;
   font-size: 17px;
   font-weight: 700;
@@ -34,7 +34,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 0 83px 0;
     font-size: 20px;
     line-height: 22px;
   }
@@ -55,6 +54,10 @@
     background-repeat: no-repeat;
   }
 
+  &--ecologic-materials::before {
+    left: 8px;
+  }
+
   &--scandinavian-style::before {
     width: 47px;
     height: 27px;
@@ -64,24 +67,32 @@
   &--likes::before {
     width: 34px;
     height: 27px;
+    top: 6px;
+    left: 7px;
     background-image: url("../img/stack.svg#icon-likes");
   }
 
   &--hand-knitted::before {
     width: 35px;
     height: 35px;
+    top: 2px;
+    left: 3px;
     background-image: url("../img/stack.svg#icon-hand-knitted");
   }
 
   &--rocket::before {
     width: 55px;
     height: 23px;
+    top: 4px;
+    left: -6px;
     background-image: url("../img/stack.svg#icon-rocket");
   }
 
   &--gift-wrap::before {
     width: 33px;
     height: 32px;
+    top: 2px;
+    left: 3px;
     background-image: url("../img/stack.svg#icon-gift-wrap");
   }
 }

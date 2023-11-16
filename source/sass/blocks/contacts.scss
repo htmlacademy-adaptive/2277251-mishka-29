@@ -3,7 +3,7 @@
   background-repeat: repeat no-repeat;
   background-position: top;
   background-size: 320px 6px;
-  padding: 38px 0 39px 0;
+  padding: 44px 0 39px 0;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -83,8 +83,12 @@
   }
 }
 
+.contacts__text {
+  margin: 0 0 0 -4px;
+}
+
 .contacts__mail-link {
-  margin: 0;
+  margin: 0 0 0 -5px;
   color: $secondary-color;
   text-decoration: underline;
   text-decoration-color: $additional-color;
