@@ -83,6 +83,8 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
+    align-self: start;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -150,6 +152,7 @@
 .video-presentation__image {
   display: block;
   width: 100%;
+  object-fit: fill;
 }
 
 .video-presentation__order-button {
