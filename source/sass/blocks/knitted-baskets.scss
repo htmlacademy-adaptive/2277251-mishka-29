@@ -185,6 +185,7 @@
 
 .knitted-baskets__order-button {
   display: block;
+  width: 100%;
   padding: 14px;
   border: 2px solid $secondary-color;
   color: $secondary-color;
@@ -197,6 +198,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+    width: initial;
     min-width: 292px;
     align-self: center;
   }
