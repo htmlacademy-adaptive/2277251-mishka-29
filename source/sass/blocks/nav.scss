@@ -1,6 +1,10 @@
 .nav {
   z-index: 2;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, #ffffff, #ffffff 88px, #e1e1e1 88px, #e1e1e1 89px, #f9f9f9, #f9f9f9 88px);
+  }
 }
 
 .nav__toggle {
@@ -100,7 +104,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, #ffffff, #ffffff 88px, #e1e1e1 88px, #e1e1e1 89px, #f9f9f9, #f9f9f9 88px);
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 88px 314px;
@@ -110,7 +113,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    grid-template-columns: 21% 21% 24% 8% 26%;
+    grid-template-columns: 183px 226px 291px 82px 266px;
   }
 }
 
