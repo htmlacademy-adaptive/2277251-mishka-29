@@ -4,10 +4,26 @@
   background-color: #f1f1f1;
 
   @media (min-width: $tablet-width) {
+    display: block;
+    padding: 0;
+  }
+}
+
+.footer-wrapper {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding: 51px 50px 58px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 51px 0 58px;
   }
 }
 
@@ -35,15 +51,5 @@
   &:active {
     opacity: 0.3;
     transition: 0.3s linear;
-  }
-}
-
-.footer__social-list {
-  @media (min-width: $tablet-width) {
-    justify-self: start;
-  }
-
-  @media (min-width: $desktop-width) {
-    justify-self: initial;
   }
 }
