@@ -37,3 +37,10 @@
     transition: 0.3s linear;
   }
 }
+
+.footer__social-list {
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+    padding-bottom: 5px;
+  }
+}
