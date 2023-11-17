@@ -12,7 +12,11 @@
 
 .catalog__list {
   @include flex(column);
-  gap: 54px;
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    gap: 54px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
