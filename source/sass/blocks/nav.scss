@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, #ffffff, #ffffff 88px, #e1e1e1 88px, #e1e1e1 89px, #f9f9f9, #f9f9f9 88px);
   }
+
+  &--extended {
+    background: linear-gradient(to bottom, #ffffff, #ffffff 88px, #e1e1e1 88px, #e1e1e1 89px, #f1f1f1, #f1f1f1 88px);
+  }
 }
 
 .nav__toggle {
@@ -114,16 +118,6 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     grid-template-columns: 183px 226px 291px 82px 266px;
-  }
-}
-
-.nav__list-wrapper {
-  @media (min-width: $tablet-width) {
-    &--extended {
-      .nav__list {
-        background: linear-gradient(to bottom, #ffffff, #ffffff 88px, #e1e1e1 88px, #e1e1e1 89px, #f1f1f1, #f1f1f1 88px);
-      }
-    }
   }
 }
 
