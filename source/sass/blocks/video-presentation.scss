@@ -51,8 +51,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 96px 110px 0 80px;
+    padding: 93px 110px 0 80px;
     border-left: none;
+    margin: 0 0 13px 0;
   }
 
   &::before {
@@ -71,7 +72,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 47px;
+      top: 43px;
       left: 80px;
     }
   }
@@ -139,6 +140,10 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 53px 0;
   }
 }
 

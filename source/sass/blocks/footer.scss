@@ -41,6 +41,9 @@
 .footer__social-list {
   @media (min-width: $tablet-width) {
     justify-self: start;
-    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: initial;
   }
 }

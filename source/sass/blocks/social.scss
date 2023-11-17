@@ -8,6 +8,11 @@
     padding: 0 0 5px 0;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 83px 5px 0;
+    border: none;
+  }
 }
 
 .social__link {
