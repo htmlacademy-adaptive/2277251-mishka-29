@@ -22,7 +22,7 @@
 .form__title-wrapper {
   @include flex();
   position: relative;
-  gap: 28px;
+  gap: 23px;
 
   &::after {
     content: "";
@@ -104,7 +104,7 @@
 .form__radio-list {
   @include flex(column);
   gap: 11px;
-  padding: 35px 0 31px 0;
+  padding: 29px 0 31px 0;
 
   @media (min-width: $tablet-width) {
     max-width: 400px;
@@ -298,20 +298,32 @@
     }
   }
 
-  &--email::after {
-    width: 32px;
-    height: 21px;
-    top: 20px;
-    right: 3px;
-    mask-image: url("../img/stack.svg#icon-mail");
-    background-size: 32px 21px;
+  &--phone {
+    .form__field {
+      padding: 14px 10px 15px 0;
+    }
+  }
 
-    @media (min-width: $tablet-width) {
-      right: 22px;
+  &--email {
+    .form__field {
+      padding: 15px 10px 12px 0;
     }
 
-    @media (min-width: $desktop-width) {
-      right: 4px;
+    &::after {
+      width: 32px;
+      height: 21px;
+      top: 20px;
+      right: 3px;
+      mask-image: url("../img/stack.svg#icon-mail");
+      background-size: 32px 21px;
+
+      @media (min-width: $tablet-width) {
+        right: 22px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 4px;
+      }
     }
   }
 
@@ -325,7 +337,7 @@
 
 .form__field {
   width: 100%;
-  padding: 17px 10px 17px 0;
+  padding: 10px 10px 10px 0;
 
   @media (min-width: $tablet-width) {
     padding: 17px 18px 17px 18px;
