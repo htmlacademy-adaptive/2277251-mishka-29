@@ -9,9 +9,11 @@
     max-width: 198px;
     padding: 0 0 5px 0;
     border: none;
+    justify-self: start;
   }
 
   @media (min-width: $desktop-width) {
+    justify-self: initial;
     max-width: 250px;
     padding: 0 0 5px 20px;
     border: none;
