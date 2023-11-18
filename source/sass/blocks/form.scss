@@ -38,6 +38,7 @@
 }
 
 .form__title {
+  max-width: 136px;
   margin: 0;
   padding: 0;
   color: $additional-color;
@@ -45,6 +46,10 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+  }
 }
 
 .form__fieldset {
