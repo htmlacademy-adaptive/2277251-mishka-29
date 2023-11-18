@@ -51,12 +51,9 @@ document.addEventListener('keydown', (evt) => {
 let sizeBtn = Array.from(document.querySelectorAll('.modal__size-button'));
 let sizeBtnActive = document.querySelector('.modal__size-button--active');
 
-sizeBtn.forEach(sizeBtn => {
-  sizeBtn.addEventListener('click', (evt) => {
-    if (sizeBtn.classList.contains('modal__size-button--active')) {
-      sizeBtn.classList.remove('modal__size-button--active');
-    } else {
-      sizeBtn.classList.add('modal__size-button--active');
-    }
+sizeBtn.forEach(item => {
+  item.addEventListener('click', (evt) => {
+    sizeBtn.forEach(item => item.classList.remove('modal__size-button--active'));
+    evt.target.classList.add('modal__size-button--active');
   });
 });
