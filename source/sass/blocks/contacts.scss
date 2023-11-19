@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 68px 0 57px 0;
+    padding: 64px 0 57px 0;
     background-image: url("../img/stack.svg#divider-tablet");
     background-size: 772px 17px;
 
@@ -21,6 +21,10 @@
       background-image: url("../img/stack.svg#icon-flag");
       background-repeat: no-repeat;
 
+      @media (min-width: $tablet-width) {
+        top: 63px;
+      }
+
       @media (min-width: $desktop-width) {
         top: 132px;
         left: 113px;
@@ -29,10 +33,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 71px 50px 105px 175px;
     display: grid;
     grid-template-columns: 1fr 527px;
     grid-template-rows: repeat(3, min-content);
-    padding: 71px 50px 105px 175px;
     background-image: url("../img/stack.svg#divider-desktop");
     background-size: 1050px 23px;
     background-repeat: no-repeat;
@@ -56,30 +60,30 @@
 
 .contacts__wrapper {
   margin: 0 0 62px 0;
+  padding: 0 30px;
   display: grid;
   grid-template-columns: 30% max-content;
   gap: 30px 0;
   justify-content: center;
-  padding: 0 30px;
   color: $secondary-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 81px 1fr 81px 1fr;
     margin: 0;
-    padding: 0 50px 49px 50px;
+    padding: 0 54px 49px 54px;
+    grid-template-columns: 74px 1fr 68px 1fr;
     font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     grid-template-columns: 81px 249px;
     grid-template-rows: repeat(2, min-content);
     grid-column: 1;
     grid-row: 2;
     gap: 30px 24px;
-    padding: 0;
   }
 }
 
@@ -123,6 +127,8 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
+    gap: 26px;
+    justify-content: normal;
     grid-column: 3 / -1;
   }
 
@@ -145,11 +151,12 @@
 
 .contacts__write-us {
   margin: 0 auto;
-  max-width: 260px;
   padding: 14px;
+  max-width: 260px;
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
+    max-width: 230px;
     font-size: 17px;
   }
 

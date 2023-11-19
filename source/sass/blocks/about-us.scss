@@ -55,45 +55,78 @@
     background-repeat: no-repeat;
   }
 
-  &--ecologic-materials::before {
-    left: 8px;
+  &--ecologic-materials {
+    @media (min-width: $tablet-width) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &::before {
+      left: 8px;
+    }
   }
 
-  &--scandinavian-style::before {
-    width: 47px;
-    height: 27px;
-    background-image: url("../img/stack.svg#icon-scandinavian-style");
+  &--scandinavian-style {
+    @media (min-width: $tablet-width) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &::before {
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/stack.svg#icon-scandinavian-style");
+    }
   }
 
-  &--likes::before {
-    width: 34px;
-    height: 27px;
-    top: 6px;
-    left: 7px;
-    background-image: url("../img/stack.svg#icon-likes");
+  &--likes {
+    &::before {
+      width: 34px;
+      height: 27px;
+      top: 6px;
+      left: 7px;
+      background-image: url("../img/stack.svg#icon-likes");
+    }
   }
 
-  &--hand-knitted::before {
-    width: 35px;
-    height: 35px;
-    top: 2px;
-    left: 3px;
-    background-image: url("../img/stack.svg#icon-hand-knitted");
+  &--hand-knitted {
+    @media (min-width: $tablet-width) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    &::before {
+      width: 35px;
+      height: 35px;
+      top: 2px;
+      left: 3px;
+      background-image: url("../img/stack.svg#icon-hand-knitted");
+    }
   }
 
-  &--rocket::before {
-    width: 55px;
-    height: 23px;
-    top: 4px;
-    left: -6px;
-    background-image: url("../img/stack.svg#icon-rocket");
+
+  &--rocket {
+    @media (min-width: $tablet-width) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    &::before {
+      width: 55px;
+      height: 23px;
+      top: 4px;
+      left: -6px;
+      background-image: url("../img/stack.svg#icon-rocket");
+    }
   }
 
-  &--gift-wrap::before {
-    width: 33px;
-    height: 32px;
-    top: 2px;
-    left: 3px;
-    background-image: url("../img/stack.svg#icon-gift-wrap");
+  &--gift-wrap {
+    &::before {
+      width: 33px;
+      height: 32px;
+      top: 2px;
+      left: 3px;
+      background-image: url("../img/stack.svg#icon-gift-wrap");
+    }
   }
 }

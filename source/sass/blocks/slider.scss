@@ -10,8 +10,8 @@
     background-image: url("../img/index/background-reviews.jpg");
     background-repeat: no-repeat;
     background-position: left;
-    padding: 80px 50px 47px 50px;
-    margin: 0 0 68px 0;
+    padding: 83px 50px 47px 50px;
+    margin: 0 0 66px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +26,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 3px 0 0 0;
   }
 }
 
@@ -52,6 +53,8 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    align-self: end;
+    padding: 0 0 2px 0;
     font-size: 18px;
   }
 
@@ -66,6 +69,8 @@
   padding: 30px 0 36px 0;
 
   @media (min-width: $tablet-width) {
+    gap: 37px;
+    transform: translate(-19px, -5px);
     grid-column: 2;
     justify-self: end;
     min-width: 137px;
@@ -102,6 +107,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 10px;
   }
 
   &:hover {
