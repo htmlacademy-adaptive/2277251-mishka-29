@@ -26,17 +26,18 @@
       }
 
       @media (min-width: $desktop-width) {
-        top: 132px;
-        left: 113px;
+        top: 155px;
+        left: 63px;
       }
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 50px 105px 175px;
+    padding: 93px 50px 105px 175px;
     display: grid;
     grid-template-columns: 1fr 527px;
     grid-template-rows: repeat(3, min-content);
+    gap: 0 23px;
     background-image: url("../img/stack.svg#divider-desktop");
     background-size: 1050px 23px;
     background-repeat: no-repeat;
@@ -53,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 49px 0;
+    margin: 0 0 -6px 0;
     padding: 79px 0 0 0;
   }
 }
@@ -79,16 +80,20 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    grid-template-columns: 81px 249px;
+    grid-template-columns: 55px 249px;
     grid-template-rows: repeat(2, min-content);
     grid-column: 1;
     grid-row: 2;
-    gap: 30px 24px;
+    gap: 30px 22px;
   }
 }
 
 .contacts__text {
   margin: 0 0 0 -4px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .contacts__mail-link {
@@ -135,7 +140,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     grid-row: 2;
-    gap: 52px;
+    gap: 25px;
     justify-content: normal;
   }
 }
@@ -161,6 +166,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     grid-row: 3;
     grid-column: 1;
     align-self: flex-end;

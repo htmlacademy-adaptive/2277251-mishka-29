@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 56px 0 68px 175px;
+    padding: 69px 0 88px 175px;
   }
 }
 
@@ -37,6 +37,11 @@
     gap: 56px 0;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 685px;
+    gap: 58px 15px;
   }
 }
 

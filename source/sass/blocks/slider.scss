@@ -17,7 +17,8 @@
   @media (min-width: $desktop-width) {
     max-width: 1050px;
     margin: 0 auto 68px auto;
-    padding: 80px 0 47px 175px;
+    padding: 78px 0 77px 175px;
+    background-position: initial;
   }
 }
 
@@ -27,6 +28,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 3px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -60,6 +65,8 @@
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
+    align-self: start;
+    padding: 4px 0 0 0;
   }
 }
 
@@ -75,6 +82,10 @@
     justify-self: end;
     min-width: 137px;
     padding: 30px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-19px, -22px);
   }
 }
 

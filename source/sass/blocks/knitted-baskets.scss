@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 0 73px 174px;
+    padding: 59px 0 96px 174px;
     background-image: url("../img/stack.svg#divider-desktop");
     background-size: 1050px 23px;
     background-repeat: no-repeat;
@@ -53,20 +53,21 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 40%;
+      top: 37%;
       right: auto;
       left: -143px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    grid-column: 1 / -1;
-    grid-row: 1;
     margin: 0 0 50px 0;
     padding: 0;
+    grid-column: 1 / -1;
+    grid-row: 1;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 -3px;
     padding: 61px 0 0 0;
   }
 }
@@ -102,6 +103,10 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: -6px 0 0;
+  }
 }
 
 .knitted-baskets__features {
@@ -120,6 +125,11 @@
     align-self: start;
     grid-column: 1;
     grid-row: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 32% 1fr;
+    padding: 0 42px 24px 0;
   }
 }
 
@@ -181,6 +191,10 @@
     margin: 0;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 15px 0 0;
+  }
 }
 
 .knitted-baskets__order-button {
@@ -201,6 +215,10 @@
     width: initial;
     min-width: 292px;
     align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: start;
   }
 
   &:hover {
