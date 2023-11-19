@@ -147,6 +147,11 @@
   margin: 0 auto;
   max-width: 260px;
   padding: 14px;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-row: 3;

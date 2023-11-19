@@ -150,10 +150,14 @@
       position: absolute;
       width: 40px;
       height: 62px;
-      top: 30px;
+      top: 23px;
       right: 36px;
       background-image: url("../img/stack.svg#icon-interior");
       background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+      }
     }
   }
 
@@ -165,10 +169,15 @@
       position: absolute;
       width: 60px;
       height: 60px;
-      top: 32px;
-      right: 34px;
+      top: 21px;
+      right: 27px;
       background-image: url("../img/stack.svg#icon-toy");
       background-repeat: no-repeat;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 32px;
+      right: 34px;
     }
   }
 }
