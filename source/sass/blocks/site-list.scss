@@ -120,6 +120,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  transition: 0.5s ease-in-out;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -162,6 +163,7 @@
     background-color: #cccccc;
     mask-image: url("../img/stack.svg#icon-search");
     background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
 
     @media (min-width: $tablet-width) {
       top: 50%;
@@ -200,6 +202,7 @@
     background-color: #cccccc;
     mask-image: url("../img/stack.svg#icon-cart");
     background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
 
     @media (min-width: $tablet-width) {
       top: 35px;
