@@ -39,6 +39,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    align-self: flex-start;
   }
 
   &:hover {

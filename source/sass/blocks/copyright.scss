@@ -13,7 +13,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 0 55px 7px 0;
+    padding: 0 55px 4px 0;
+    align-self: flex-start;
     justify-self: end;
   }
 
@@ -27,10 +28,6 @@
     mask-image: url("../img/stack.svg#icon-html-academy");
     background-color: $additional-color;
     transition: 0.3s ease-in;
-
-    @media (min-width: $tablet-width) {
-      top: -3px;
-    }
   }
 
   &:hover::after {
