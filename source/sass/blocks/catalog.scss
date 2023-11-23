@@ -152,4 +152,9 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus-visible {
+    outline: 3px solid $main-color;
+    outline-offset: 4px;
+  }
 }
