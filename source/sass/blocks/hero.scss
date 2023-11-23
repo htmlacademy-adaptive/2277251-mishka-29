@@ -67,6 +67,14 @@
 
     @media (min-width: $desktop-width) {
       padding: 14px 22px 102px 22px;
+
+      &::after {
+        background-image: url("../img/stack.svg#hero-divider-additional-desktop");
+        background-repeat: repeat no-repeat;
+        background-size: 1150px 34px;
+        height: 34px;
+        bottom: -11px;
+      }
     }
   }
 }
