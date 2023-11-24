@@ -1,5 +1,6 @@
 .footer {
   @include flex(column);
+  margin-top: auto;
   padding: 26px 30px 23px 30px;
   background-color: #f1f1f1;
 

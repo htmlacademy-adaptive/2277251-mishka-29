@@ -1,4 +1,5 @@
 .page {
+  @include flex(column);
   height: 100%;
   margin: 0;
   background-color: #ffffff;
