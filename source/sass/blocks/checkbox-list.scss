@@ -18,6 +18,7 @@
 }
 
 .checkbox-list__control {
+  @include flex();
   position: relative;
   cursor: pointer;
 }
