@@ -51,30 +51,30 @@
   @media (min-width: 1170px) {
     background-size: contain;
   }
+}
 
-  &--additional {
-    background-color: #f1f1f1;
-    background-image: none;
-    padding: 73px 22px;
+.hero--additional {
+  background-color: #f1f1f1;
+  background-image: none;
+  padding: 73px 22px;
 
-    .hero__title {
-      padding: 0;
-    }
+  .hero__title {
+    padding: 0;
+  }
 
-    @media (min-width: $tablet-width) {
-      padding: 14px 22px 86px 22px;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 14px 22px 86px 22px;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding: 14px 22px 102px 22px;
+  @media (min-width: $desktop-width) {
+    padding: 14px 22px 102px 22px;
 
-      &::after {
-        background-image: url("../img/stack.svg#hero-divider-additional-desktop");
-        background-repeat: repeat no-repeat;
-        background-size: 1150px 34px;
-        height: 34px;
-        bottom: -11px;
-      }
+    &::after {
+      background-image: url("../img/stack.svg#hero-divider-additional-desktop");
+      background-repeat: repeat no-repeat;
+      background-size: 1150px 34px;
+      height: 34px;
+      bottom: -11px;
     }
   }
 }
@@ -152,43 +152,43 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
 
-  &--interior {
-    position: relative;
+.hero__link--interior {
+  position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 62px;
-      top: 23px;
-      right: 36px;
-      background-image: url("../img/stack.svg#icon-interior");
-      background-repeat: no-repeat;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 62px;
+    top: 23px;
+    right: 36px;
+    background-image: url("../img/stack.svg#icon-interior");
+    background-repeat: no-repeat;
 
-      @media (min-width: $tablet-width) {
-        top: 30px;
-      }
+    @media (min-width: $tablet-width) {
+      top: 30px;
     }
   }
+}
 
-  &--toys {
-    position: relative;
+.hero__link--toys {
+  position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 21px;
-      right: 27px;
-      background-image: url("../img/stack.svg#icon-toy");
-      background-repeat: no-repeat;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 21px;
+    right: 27px;
+    background-image: url("../img/stack.svg#icon-toy");
+    background-repeat: no-repeat;
 
-      @media (min-width: $tablet-width) {
-        top: 32px;
-        right: 34px;
-      }
+    @media (min-width: $tablet-width) {
+      top: 32px;
+      right: 34px;
     }
   }
 }

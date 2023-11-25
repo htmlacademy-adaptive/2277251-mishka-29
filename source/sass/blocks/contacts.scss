@@ -16,23 +16,10 @@
       position: absolute;
       width: 47px;
       height: 81px;
-      top: 68px;
+      top: 63px;
       right: 53px;
       background-image: url("../img/stack.svg#icon-flag");
       background-repeat: no-repeat;
-
-      @media (min-width: $tablet-width) {
-        top: 63px;
-      }
-
-      @media (min-width: $desktop-width) {
-        top: 155px;
-        left: 63px;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 64px 0 57px 0;
     }
   }
 
@@ -45,6 +32,11 @@
     background-image: url("../img/stack.svg#divider-desktop");
     background-size: 1050px 23px;
     background-repeat: no-repeat;
+
+    &::before {
+      top: 155px;
+      left: 63px;
+    }
   }
 }
 
