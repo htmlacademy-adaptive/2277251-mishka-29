@@ -13,12 +13,13 @@
   padding: 22px 0;
   margin-left: 50%;
   transform: translateX(-50%);
+  transition: 0.3s linear;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 48px;
     transform: none;
   }
 
@@ -30,10 +31,12 @@
 
   &:hover {
     opacity: 0.6;
+    transition: 0.3s linear;
   }
 
   &:active {
     opacity: 0.3;
+    transition: 0.3s linear;
   }
 }
 

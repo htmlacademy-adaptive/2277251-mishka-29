@@ -42,29 +42,39 @@
     &::after {
       background-image: url("../img/stack.svg#hero-divider-desktop");
       background-repeat: repeat no-repeat;
-      background-size: 1250px 34px;
+      background-size: 1150px 34px;
+      height: 34px;
+      bottom: -5px;
     }
   }
 
   @media (min-width: 1170px) {
     background-size: contain;
   }
+}
 
-  &--additional {
-    background-color: #f1f1f1;
-    background-image: none;
-    padding: 74px 22px;
+.hero--additional {
+  background-color: #f1f1f1;
+  background-image: none;
+  padding: 73px 22px;
 
-    .hero__title {
-      padding: 0;
-    }
+  .hero__title {
+    padding: 0;
+  }
 
-    @media (min-width: $tablet-width) {
-      padding: 14px 22px 74px 22px;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 14px 22px 86px 22px;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding: 14px 22px 96px 22px;
+  @media (min-width: $desktop-width) {
+    padding: 14px 22px 102px 22px;
+
+    &::after {
+      background-image: url("../img/stack.svg#hero-divider-additional-desktop");
+      background-repeat: repeat no-repeat;
+      background-size: 1150px 34px;
+      height: 34px;
+      bottom: -11px;
     }
   }
 }
@@ -85,6 +95,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 70px 50px 355px 50px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -107,6 +118,10 @@
     transform: translateY(-5px);
     transition: 0.5s linear;
     background-color: #59d5bc;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 5px;
+    }
 
     .hero__link {
       transform: translateY(-5px);
@@ -133,38 +148,47 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 36px 34px 36px;
+    padding: 25px 36px 46px 36px;
     font-size: 20px;
     line-height: 30px;
   }
+}
 
-  &--interior {
-    position: relative;
+.hero__link--interior {
+  position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 62px;
-      top: 23px;
-      right: 36px;
-      background-image: url("../img/stack.svg#icon-interior");
-      background-repeat: no-repeat;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 62px;
+    top: 23px;
+    right: 36px;
+    background-image: url("../img/stack.svg#icon-interior");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
     }
   }
+}
 
-  &--toys {
-    position: relative;
+.hero__link--toys {
+  position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 21px;
-      right: 27px;
-      background-image: url("../img/stack.svg#icon-toy");
-      background-repeat: no-repeat;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 21px;
+    right: 27px;
+    background-image: url("../img/stack.svg#icon-toy");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 32px;
+      right: 34px;
     }
   }
 }

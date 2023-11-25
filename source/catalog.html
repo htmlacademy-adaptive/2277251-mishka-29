@@ -10,6 +10,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32.png">
   <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 <body class="page">
   <header class="header">
@@ -20,49 +22,35 @@
         <img class="header__logo-img" src="img/stack.svg#logo-mobile" width="86" height="35" alt="Логотип сайта Мишка.">
       </picture>
     </a>
-    <nav class="nav nav--closed nav--no-js">
+    <nav class="nav nav--closed nav--no-js nav--extended">
       <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации.">
         <span class="nav__toggle-line"></span>
       </button>
-      <div class="nav__list-wrapper nav__list-wrapper--extended">
-        <ul class="nav__list site-list reset-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--search" href="#">
-              <span class="site-list__search-text">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="site-list__item">
-            <button class="button site-list__link site-list__link--cart" type="button">
-              Корзина: пока пуста
-            </button>
-          </li>
-          <li class="site-list__item site-list__item--additional">
-            <a class="site-list__link" href="#">
-              Новые поступления
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--additional">
-            <a class="site-list__link" href="#">
-              Распродажа
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--delivery">
-            <a class="site-list__link site-list__delivery-link" href="#">
-              Бесплатная доставка по России
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav__list site-list reset-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--search" href="#">
+            <span class="site-list__search-text">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="site-list__item">
+          <button class="button site-list__link site-list__link--cart" type="button">Корзина: пока пуста</button>
+        </li>
+        <li class="site-list__item site-list__item--additional">
+          <a class="site-list__link" href="#">Новые поступления</a>
+        </li>
+        <li class="site-list__item site-list__item--additional">
+          <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
+        </li>
+        <li class="site-list__item site-list__item--delivery">
+          <a class="site-list__link site-list__delivery-link" href="#">Бесплатная доставка по России</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="page__main">
@@ -84,9 +72,7 @@
             </picture>
           </a>
           <div class="catalog__product-wrapper">
-            <a class="catalog__product-link" href="#">
-              Зайчик-попрыгайчик
-            </a>
+            <a class="catalog__product-link" href="#">Зайчик-попрыгайчик</a>
             <dl class="catalog__product-features">
               <dt class="catalog__product-term">Рост</dt>
               <dd class="catalog__product-definition">30 см,</dd>
@@ -111,9 +97,7 @@
             </picture>
           </a>
           <div class="catalog__product-wrapper">
-            <a class="catalog__product-link" href="#">
-              Корзинка для белья
-            </a>
+            <a class="catalog__product-link catalog__product-link--cart" href="#">Корзинка для белья</a>
             <dl class="catalog__product-features">
               <dt class="catalog__product-term">Диаметр</dt>
               <dd class="catalog__product-definition">15 см,</dd>
@@ -138,9 +122,7 @@
             </picture>
           </a>
           <div class="catalog__product-wrapper">
-            <a class="catalog__product-link catalog__product-link--extended" href="#">
-              Большая корзинка для игрушек
-            </a>
+            <a class="catalog__product-link catalog__product-link--extended" href="#">Большая корзинка для&nbsp;игрушек</a>
             <dl class="catalog__product-features">
               <dt class="catalog__product-term">Диаметр</dt>
               <dd class="catalog__product-definition">30 см,</dd>
@@ -156,74 +138,60 @@
       </ul>
     </section>
     <section class="page__production-process video-presentation container">
-      <h2 class="video-presentation__title">Процесс производства</h2>
-      <a class="video-presentation__link" href="#">
-        <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/catalog-videopresentation-desktop.webp 1x, img/catalog/catalog-videopresentation-desktop@2x.webp 2x" width="683" height="455">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-videopresentation-tablet.webp 1x, img/catalog/catalog-videopresentation-tablet@2x.webp 2x"  width="668" height="455">
-          <source type="image/webp" srcset="img/catalog/catalog-videopresentation.webp 1x, img/catalog/catalog-videopresentation@2x.webp 2x" width="260" height="150">
-          <source media="(min-width: 1150px)" srcset="img/catalog/catalog-videopresentation-desktop.jpg, img/catalog/catalog-videopresentation-desktop.jpg 2x" width="683" height="455">
-          <source media="(min-width: 768px)" srcset="img/catalog/catalog-videopresentation-tablet.jpg, img/catalog/catalog-videopresentation@2x.jpg 2x" width="668" height="455">
-          <img class="video-presentation__image" src="img/catalog/catalog-videopresentation.jpg" srcset="img/catalog/catalog-videopresentation@2x.jpg 2x" width="260" height="150" alt="Превью видеопрезентации процесса производства товаров.">
-        </picture>
-      </a>
       <div class="video-presentation__description">
-        <p class="video-presentation__text">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a class="video-presentation__order-button button button--main" href="#">
-          Сделать заказ
+        <a class="video-presentation__link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/catalog-videopresentation-desktop.webp 1x, img/catalog/catalog-videopresentation-desktop@2x.webp 2x" width="683" height="455">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-videopresentation-tablet.webp 1x, img/catalog/catalog-videopresentation-tablet@2x.webp 2x"  width="668" height="455">
+            <source type="image/webp" srcset="img/catalog/catalog-videopresentation.webp 1x, img/catalog/catalog-videopresentation@2x.webp 2x" width="260" height="150">
+            <source media="(min-width: 1150px)" srcset="img/catalog/catalog-videopresentation-desktop.jpg, img/catalog/catalog-videopresentation-desktop.jpg 2x" width="683" height="455">
+            <source media="(min-width: 768px)" srcset="img/catalog/catalog-videopresentation-tablet.jpg, img/catalog/catalog-videopresentation@2x.jpg 2x" width="668" height="455">
+            <img class="video-presentation__image" src="img/catalog/catalog-videopresentation.jpg" srcset="img/catalog/catalog-videopresentation@2x.jpg 2x" width="260" height="150" alt="Превью видеопрезентации процесса производства товаров.">
+          </picture>
         </a>
+        <h2 class="video-presentation__title">Процесс производства</h2>
+        <p class="video-presentation__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="video-presentation__order-button button button--main" href="#">Сделать заказ</a>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__logo-link" href="index.html">
-      <svg class="footer__logo" width="102" height="35">
-        <use href="img/stack.svg#footer-logo"></use>
-      </svg>
-    </a>
-    <ul class="footer__social-list social reset-list">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
-      </li>
-    </ul>
-    <a class="footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">
-      Разработано
-    </a>
+    <div class="footer-wrapper">
+      <a class="footer__logo-link" href="index.html">
+        <svg class="footer__logo" width="102" height="35">
+          <use href="img/stack.svg#footer-logo"></use>
+        </svg>
+      </a>
+      <ul class="footer__social-list social reset-list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
+        </li>
+      </ul>
+      <a class="footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">Разработано</a>
+    </div>
   </footer>
   <div class="modal">
     <div class="modal__control modal__add-to-cart">
       <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">
-        Выберите размер:
-      </p>
+      <p class="modal__text">Выберите размер:</p>
       <ul class="modal__list reset-list">
         <li class="modal__item">
-          <button class="button modal__size-button modal__size-button--active" type="button">
-            S
-          </button>
+          <button class="button modal__size-button modal__size-button--active" type="button" aria-label="Размер S.">S</button>
         </li>
         <li class="modal__item">
-          <button class="button modal__size-button" type="button">
-            M
-          </button>
+          <button class="button modal__size-button" type="button" aria-label="Размер M.">M</button>
         </li>
         <li class="modal__item">
-          <button class="button modal__size-button" type="button">
-            L
-          </button>
+          <button class="button modal__size-button" type="button" aria-label="Размер L.">L</button>
         </li>
       </ul>
-      <button class="button modal__add-button button--additional" type="button">
-        Добавить
-      </button>
+      <button class="button modal__add-button button--additional" type="button" aria-label="Добавить в корзину.">Добавить</button>
     </div>
   </div>
   <script src="js/script.js"></script>

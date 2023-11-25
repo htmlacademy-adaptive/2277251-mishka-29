@@ -13,6 +13,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0 55px 4px 0;
+    align-self: flex-start;
     justify-self: end;
   }
 
@@ -25,6 +27,7 @@
     height: 35px;
     mask-image: url("../img/stack.svg#icon-html-academy");
     background-color: $additional-color;
+    transition: 0.3s ease-in;
   }
 
   &:hover::after {
@@ -33,5 +36,6 @@
 
   &:active::after {
     opacity: 0.3;
+    transition: 0.3s ease-in;
   }
 }

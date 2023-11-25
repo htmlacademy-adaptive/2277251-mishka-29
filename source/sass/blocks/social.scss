@@ -1,11 +1,21 @@
 .social {
   @include flex(row, center);
+  flex-wrap: wrap;
   gap: 29px;
-  padding: 0 0 28px 0;
+  padding: 0 0 30px 0;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    max-width: 198px;
+    padding: 0 0 5px 0;
+    border: none;
+    justify-self: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: initial;
+    max-width: 250px;
+    padding: 0 0 5px 20px;
     border: none;
   }
 }
@@ -29,6 +39,7 @@
       mask-image: url("../img/stack.svg#icon-vkontakte");
       background-color: #231f20;
       background-repeat: no-repeat;
+      transition: 0.3s ease-in;
     }
   }
 
@@ -44,6 +55,7 @@
       mask-image: url("../img/stack.svg#icon-youtube");
       background-color: #231f20;
       background-repeat: no-repeat;
+      transition: 0.3s ease-in;
     }
   }
 
@@ -59,14 +71,17 @@
       mask-image: url("../img/stack.svg#icon-telegram");
       background-color: #231f20;
       background-repeat: no-repeat;
+      transition: 0.3s ease-in;
     }
   }
 
   &:hover::before {
     background-color: #46c1ae;
+    transition: 0.3s ease-in;
   }
 
   &:active::before {
     opacity: 0.3;
+    transition: 0.3s ease-in;
   }
 }

@@ -45,3 +45,15 @@ document.addEventListener('keydown', (evt) => {
     modal.style.display = "none";
   }
 });
+
+/* Кнопки переключатели в модальном окне */
+
+let sizeBtn = Array.from(document.querySelectorAll('.modal__size-button'));
+let sizeBtnActive = document.querySelector('.modal__size-button--active');
+
+sizeBtn.forEach(item => {
+  item.addEventListener('click', (evt) => {
+    sizeBtn.forEach(item => item.classList.remove('modal__size-button--active'));
+    evt.target.classList.add('modal__size-button--active');
+  });
+});

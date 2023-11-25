@@ -1,8 +1,12 @@
 .about-us {
-  padding: 31px 30px 45px 30px;
+  padding: 31px 30px 58px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 50px 68px 50px;
+    padding: 56px 50px 80px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 0 88px 175px;
   }
 }
 
@@ -10,14 +14,18 @@
   margin: 0 0 28px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 44px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 39px 0;
   }
 }
 
 .about-us__list {
   @include flex(column);
-  gap: 30px;
-  margin: 0 0 52px 0;
+  gap: 29px;
+  margin: 0;
   color: $main-color;
   font-size: 17px;
   font-weight: 700;
@@ -26,15 +34,20 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 0 83px 0;
+    gap: 56px 0;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 685px;
+    gap: 58px 15px;
   }
 }
 
 .about-us__item {
   position: relative;
-  padding: 54px 0 0 0;
+  padding: 54px 25px 0 0;
 
   &::before {
     content: "";
@@ -47,33 +60,78 @@
     background-repeat: no-repeat;
   }
 
-  &--scandinavian-style::before {
-    width: 47px;
-    height: 27px;
-    background-image: url("../img/stack.svg#icon-scandinavian-style");
+  &--ecologic-materials {
+    @media (min-width: $tablet-width) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &::before {
+      left: 8px;
+    }
   }
 
-  &--likes::before {
-    width: 34px;
-    height: 27px;
-    background-image: url("../img/stack.svg#icon-likes");
+  &--scandinavian-style {
+    @media (min-width: $tablet-width) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &::before {
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/stack.svg#icon-scandinavian-style");
+    }
   }
 
-  &--hand-knitted::before {
-    width: 35px;
-    height: 35px;
-    background-image: url("../img/stack.svg#icon-hand-knitted");
+  &--likes {
+    &::before {
+      width: 34px;
+      height: 27px;
+      top: 6px;
+      left: 7px;
+      background-image: url("../img/stack.svg#icon-likes");
+    }
   }
 
-  &--rocket::before {
-    width: 55px;
-    height: 23px;
-    background-image: url("../img/stack.svg#icon-rocket");
+  &--hand-knitted {
+    @media (min-width: $tablet-width) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    &::before {
+      width: 35px;
+      height: 35px;
+      top: 2px;
+      left: 3px;
+      background-image: url("../img/stack.svg#icon-hand-knitted");
+    }
   }
 
-  &--gift-wrap::before {
-    width: 33px;
-    height: 32px;
-    background-image: url("../img/stack.svg#icon-gift-wrap");
+
+  &--rocket {
+    @media (min-width: $tablet-width) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    &::before {
+      width: 55px;
+      height: 23px;
+      top: 4px;
+      left: -6px;
+      background-image: url("../img/stack.svg#icon-rocket");
+    }
+  }
+
+  &--gift-wrap {
+    &::before {
+      width: 33px;
+      height: 32px;
+      top: 2px;
+      left: 3px;
+      background-image: url("../img/stack.svg#icon-gift-wrap");
+    }
   }
 }
