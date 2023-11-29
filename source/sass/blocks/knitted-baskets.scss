@@ -46,16 +46,18 @@
       height: max-content;
       padding: 7px 0 10px;
       text-align: center;
-      top: -2px;
+      line-height: 1;
+      top: -1px;
       right: 13px;
       left: auto;
       bottom: auto;
     }
 
     @media (min-width: $desktop-width) {
-      top: 37%;
+      top: 38%;
       right: auto;
       left: -143px;
+
     }
   }
 
