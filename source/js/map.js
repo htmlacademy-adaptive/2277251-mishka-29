@@ -3,9 +3,9 @@
 let screenWidth = window.screen.width;
 let mapWrapper = document.querySelector('.page__map');
 let mapImage = document.querySelector('.contacts__map-image-wrapper');
-let center = [59.93877198926694,30.3230594070307];
+let center = [59.93875045552004,30.322844830309467];
 let pinSize = [67, 100];
-let pinOffset = [-30, -90];
+let pinOffset = [-25, -80];
 let zoom = 17;
 
 mapWrapper.classList.remove('map--no-js');
