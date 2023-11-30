@@ -1,13 +1,13 @@
 .nav {
   z-index: 2;
   margin-left: auto;
+}
 
+.nav--extended {
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, #ffffff, #ffffff 88px, #e1e1e1 88px, #e1e1e1 89px, #f9f9f9, #f9f9f9 88px);
-  }
-
-  &--extended {
-    background: linear-gradient(to bottom, #ffffff, #ffffff 88px, #e1e1e1 88px, #e1e1e1 89px, #f1f1f1, #f1f1f1 88px);
+    .nav__list {
+      background: linear-gradient(to bottom, #ffffff, #ffffff 50%, #e1e1e1 50.5%, #e1e1e1 50%, #f1f1f1, #f1f1f1 50%);
+    }
   }
 }
 
@@ -113,6 +113,8 @@
     grid-template-columns: 1fr 1fr 84px 314px;
     grid-template-rows: 1fr 1fr;
     min-height: 176px;
+    background: linear-gradient(to bottom, #ffffff, #ffffff 50%, #e1e1e1 50.5%, #e1e1e1 50%, #f9f9f9, #f9f9f9 50%);
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {

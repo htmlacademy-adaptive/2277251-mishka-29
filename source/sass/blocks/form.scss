@@ -105,6 +105,10 @@
 
   @media (min-width: $desktop-width) {
     padding: 47px 225px 55px 111px;
+
+    .form__title-wrapper {
+      padding: 20px 0 0 0;
+    }
   }
 }
 

@@ -64,11 +64,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 14px 22px 86px 22px;
+    padding: 12px 22px 86px 22px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 14px 22px 102px 22px;
+    padding: 12px 22px 102px 22px;
 
     &::after {
       background-image: url("../img/stack.svg#hero-divider-additional-desktop");
@@ -90,13 +90,13 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 67px 50px 372px 50px;
+    padding: 65px 50px 372px 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 50px 355px 50px;
+    padding: 68px 50px 355px 50px;
     font-size: 53px;
     line-height: 57px;
   }
