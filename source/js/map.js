@@ -15,6 +15,14 @@ if (screenWidth >= 1150) {
   zoom = 16;
 }
 
+if (screenWidth < 768) {
+  pinOffset = [-22, -80];
+}
+
+if (screenWidth >= 768 && screenWidth < 1150) {
+  pinOffset = [-20, -90];
+}
+
 function init() {
   let map = new ymaps.Map('map', {
     center: center,
