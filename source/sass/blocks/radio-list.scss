@@ -14,11 +14,19 @@
     font-size: 19px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 17px 0 17px 79px;
+  }
+
   &--size {
     padding: 12px 0 12px 61px;
 
     @media (min-width: $tablet-width) {
       padding: 17px 0 17px 78px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 17px 0 17px 79px;
     }
   }
 }

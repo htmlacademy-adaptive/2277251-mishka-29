@@ -3,9 +3,9 @@
 let screenWidth = window.screen.width;
 let mapWrapper = document.querySelector('.page__map');
 let mapImage = document.querySelector('.contacts__map-image-wrapper');
-let center = [59.93877198926694,30.3230594070307];
+let center = [59.93875045552004,30.322844830309467];
 let pinSize = [67, 100];
-let pinOffset = [-30, -90];
+let pinOffset = [-25, -80];
 let zoom = 17;
 
 mapWrapper.classList.remove('map--no-js');
@@ -13,6 +13,14 @@ mapImage.classList.remove('contacts__map-image-wrapper--no-js');
 
 if (screenWidth >= 1150) {
   zoom = 16;
+}
+
+if (screenWidth < 768) {
+  pinOffset = [-22, -80];
+}
+
+if (screenWidth >= 768 && screenWidth < 1150) {
+  pinOffset = [-20, -90];
 }
 
 function init() {

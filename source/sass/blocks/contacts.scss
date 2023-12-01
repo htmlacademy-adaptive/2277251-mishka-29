@@ -27,7 +27,7 @@
     padding: 93px 50px 105px 175px;
     display: grid;
     grid-template-columns: 1fr 527px;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: min-content 1fr min-content;
     gap: 0 23px;
     background-image: url("../img/stack.svg#divider-desktop");
     background-size: 1050px 23px;
@@ -75,7 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 42px 0;
     grid-template-columns: 55px 249px;
     grid-template-rows: repeat(2, min-content);
     grid-column: 1;
